@@ -1,3 +1,5 @@
+# Que. Write a program in TAL to ask for 2 numbers as input and perform add, sub, mult and div operation and show the result on the terminal. Also support decimal value like 11.22 + 22.33 = 33.55
+
 # Program: TAL Arithmetic Operations
 # Purpose: Accepts two decimal numbers as input and performs addition, subtraction, multiplication, and division.
 
