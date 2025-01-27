@@ -1,0 +1,42 @@
+# Program: TAL Arithmetic Operations
+# Purpose: Accepts two decimal numbers as input and performs addition, subtraction, multiplication, and division.
+
+# Include necessary system macros
+?INCLUDE $SYSTEM.SYSTEMDEFS
+
+ENTRY PROCEDURE Main;
+BEGIN
+  STRING number1[20], number2[20];
+  REAL num1, num2, result;
+
+  # Display instructions to the user
+  DISPLAY ("Enter the first number (decimal values supported): ");
+  READ number1;
+  num1 := CONVERT_REAL(number1);  # Convert string input to REAL type
+
+  DISPLAY ("Enter the second number (decimal values supported): ");
+  READ number2;
+  num2 := CONVERT_REAL(number2);  # Convert string input to REAL type
+
+  # Perform addition
+  result := num1 + num2;
+  DISPLAY ("Addition: " & number1 & " + " & number2 & " = " & result:STRING:15:2); 
+
+  # Perform subtraction
+  result := num1 - num2;
+  DISPLAY ("Subtraction: " & number1 & " - " & number2 & " = " & result:STRING:15:2);
+
+  # Perform multiplication
+  result := num1 * num2;
+  DISPLAY ("Multiplication: " & number1 & " * " & number2 & " = " & result:STRING:15:2);
+
+  # Perform division (with error handling)
+  IF num2 = 0.0 THEN
+    DISPLAY ("Division: Division by zero is not allowed.");
+  ELSE
+    result := num1 / num2;
+    DISPLAY ("Division: " & number1 & " / " & number2 & " = " & result:STRING:15:2);
+  ENDIF;
+
+  STOP;  # End of the program
+END;
