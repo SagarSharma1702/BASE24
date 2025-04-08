@@ -1,0 +1,6 @@
+?section assign macro
+ #frame
+ #push a
+ #set a [#input enter your name]
+ #output hello [a]
+ #unframe

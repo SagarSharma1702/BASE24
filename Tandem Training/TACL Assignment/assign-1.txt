@@ -1,0 +1,4 @@
+?SECTION assign1 MACRO
+ #FRAME
+ #OUTPUT Hello WOrld
+ #UNFRAME

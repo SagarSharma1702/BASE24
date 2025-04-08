@@ -1,0 +1,16 @@
+?section calculator macro
+ #frame
+ #push a,b,c,d
+ #set a [#input enter first number]
+ #set b [#input enter second number]
+ #set c [#input choose what to do(+,-,*,/)]
+ [
+ #case[c]
+ |+| #set d [#compute a+b]
+ |-| #set d [#compute a-b]
+ |*| #set d [#compute a*b]
+ |/| #set d [#compute a/b]
+ |otherwise| #output enter valid value
+ ]
+ #output [a][c][b]=[d]
+ #unframe
