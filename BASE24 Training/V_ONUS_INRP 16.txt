@@ -1,0 +1,1910 @@
+Comment:
+========
+
+
+NA
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+LNCF:
+=====
+
+
+NA
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CAF:
+=====
+
+
+NA
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NCS:
+====
+
+
+NA
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+EMS:
+====
+
+
+NA
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AUDIT:
+======
+R  11574 TM000401         -> P1A^N502         Len 435  f--- i 30/01 13:44:07.71
+                                                                         187177
+NDC/DDC message
+  1: Message Class       : 1 - Unsolicited message
+     Message Subclass    : 1 - Transaction request
+  2: Logical Unit Nr     : 000
+  5: Top of receipt      : 1 - Will print at top of receipt
+     Msg Coord 'Number'  : 2
+  6: Track 2             : ;4363932101060777=22052260001940?
+  8: Operation Code      : CADB C A  
+  9: Amount              : 00000000
+ 10: PIN Block           : 283><<1?;=26500; (283ECC1FBD26500B)
+ 13: 2: Previous Transaction Status
+        2077 - Last tran seq nr.
+        1 - Last status sent - Good completion sent
+        00000 00000 00000 00000 Last notes disp counts
+ 14: 5: Smartcard Data 
+     CAM - assumed NCR format 
+     CAM Flags: 0004
+       0 - (reserved future use)           
+       0 - (reserved future use)           
+       0 - (reserved future use)           
+       0 - Tran not declined offline       
+       0 - Appl data retrieval successful  
+       0 - Get Proc Options successful     
+       0 - Appl selection successful       
+       0 - (reserved future use)           
+       0 - PDOL data valid                 
+       0 - CDOL1 data valid                
+       0 - Generate AC successful          
+       0 - (reserved future use)           
+       0 - CAM or Easy Entry not yet succfl
+       1 - Easy Entry proc not init        
+       0 - CAM proc was initiated          
+       0 - (reserved future use)           
+     57   Trk2 Equiv Data      : 10 4363932101060777D22052260001940F
+     5A   App PAN              : 08 4363932101060777
+     9F06 App ID           AID : 07 A0000000031010
+     9A   Tran Date            : 03 180130
+     9C   Tran Type            : 01 00 - Goods and Services
+     5F2A Tran Currency Code   : 02 0356 - Indian rupee            
+     9F36 App Tran Counter ATC : 02 01D1
+     9F10 Iss App Data     IAD : 07 06010A03A00000
+       .1  Derivation key index              : 01
+       .2  Cryptogram Version Number         : 0A
+       .3  Card Verification Results         : 03 (length)
+         1.1+ Second Cryptogram Type           : 10 - N/Rqst
+         1.3+ First Cryptogram Type            : 10 - ARQC  
+         1.5  Issuer Authentication Failed     : 0 - No    
+         1.6  Offline PIN Verification Done    : 0 - No    
+         1.7  Offline PIN Verification Failed  : 0 - No    
+         1.8  Able to Go Online                : 0 - Yes   
+         2.1  Last Online Transaction Complete : 0 - Yes   
+         2.2  PIN Try Limit Exceeded           : 0 - No    
+         2.3  Velocity Checking Ctrs Exceeded  : 0 - No    
+         2.4  New Card                         : 0 - No    
+         2.5  Iss Authentication Faild Last Trn: 0 - No    
+         2.6  Iss Auth Performed on Last Tran  : 0 - Yes   
+         2.7  PIN Try Limit Exceeded - App Blck: 0 - No    
+         2.8  Static Data Auth - Term Go-Online: 0 - Yes   
+         3.1+ Number of Sec Iss Script on Last : 0
+         3.5  Iss Script Proc OK on Last Tran  : 0 - Yes   
+         3.6  DDA Failed Lst Trn & Decl Offline: 0 - No    
+         3.7  DDA Performed                    : 0 - No    
+         3.8  -- reserved future use --        : 
+     82   App Ichg Profile AIP : 02 3C00
+       --  1.1     -- future use --          : 0 N/A
+       1.2 Static Data Authentication        : 0 Not supported   
+       1.3 Dynamic Data Authentication       : 1 Supported       
+       1.4 Cardholder Verification           : 1 Supported       
+       1.5 Terminal Risk Management          : 1 Performed       
+       1.6 Issuer Authentication             : 1 Supported       
+       --  1.7     -- future use --          : 0 N/A
+       1.8 Combined DDA/Gen AC (CDA)         : 0 Not supported   
+       --  2.1-2.8 -- future use --          : 00000000 N/A
+     9F1A Term Country Code    : 02 0356 - India                           
+     95   Term Verif Rslts TVR : 05 808004D000
+       1.1 Offline Authenticn Not Performed  : 1 True
+       1.2 Static Data Authentication Failed : 0 No  
+       1.3 Chip Data Missing                 : 0 No  
+       1.4 PAN on Terminal Exception File    : 0 No  
+       1.5 DDA failed                        : 0 No  
+       1.6 CDA failed                        : 0 No  
+       --  1.7-1.8 -- future use --          : 00 N/A
+       2.1 Chip and Term App Versions Differ : 1 Yes 
+       2.2 Application Expired               : 0 No  
+       2.3 Application not yet effective     : 0 Is  
+       2.4 Svc Not Allowed for Card Product  : 0 Is  
+       2.5 New Card Product                  : 0 No  
+       --  2.6-2.8 -- future use --          : 000 N/A
+       3.1 Cardholder Verification Failed    : 0 No  
+       3.2 Unrecognised CVM or Other         : 0 Othr
+       3.3 Offline PIN Try Limit Exceeded    : 0 No  
+       3.4 PIN Ent Reqd - no pad or not wkg  : 0 Flse
+       3.5 PIN Ent Reqd - has pad, not entrd : 0 Flse
+       3.6 Online PIN entered                : 1 Yes 
+       --  3.7-3.8 -- future use --          : 00 N/A
+       4.1 Transaction Exceeds Floor Limit   : 1 Yes 
+       4.2 Lower Consec Offl Limit Exceeded  : 1 Yes 
+       4.3 Upper Consec Offl Limit Exceeded  : 0 No  
+       4.4 Tran Selected Randomly for Online : 1 Yes 
+       4.5 Merchant Forced Tran Online       : 0 No  
+       --  4.6-4.8 -- future use --          : 000 N/A
+       5.1 Default TDOL used                 : 0 No  
+       5.2 Issuer Authentication Failed      : 0 No  
+       5.3 Script Proc Failed bfr final genAC: 0 No  
+       5.4 Script Proc Failed aft final genAC: 0 No  
+       --  5.5-5.8 -- future use --          : 0000 N/A
+     9B   Tran Status Info     : 02 6800
+       1.1 Offline authentication done       : 0 No  
+       1.2 Cardholder verification done      : 1 Yes 
+       1.3 Card risk management done         : 1 Yes 
+       1.4 Issuer authentication done        : 0 No  
+       1.5 Terminal risk management done     : 1 Yes 
+       1.6 Script processing done            : 0 No  
+       --  1.7 -- future use --              : 0 N/A 
+       --  1.8 -- future use --              : 0 N/A 
+       --  2.1 -- future use --              : 0 N/A 
+       --  2.2 -- future use --              : 0 N/A 
+       --  2.3 -- future use --              : 0 N/A 
+       --  2.4 -- future use --              : 0 N/A 
+       --  2.5 -- future use --              : 0 N/A 
+       --  2.6 -- future use --              : 0 N/A 
+       --  2.7 -- future use --              : 0 N/A 
+       --  2.8 -- future use --              : 0 N/A 
+     9F37 Unpredict Number     : 04 01DFBD5E
+     9F26 App Cryptogram       : 08 85E553F3D41473A5
+     9F27 Cgram Info Data  CID : 01 80 - ARQC
+     9F33 Term Capabilities    : 03 604020
+       1.1  Card data manual entry           : 0 Not supported   
+       1.2  Card data from mag stripe        : 1 Supported       
+       1.3  Card data from chip              : 1 Supported       
+       --   1.4-1.8 -- future use --         : 00000 N/A
+       2.1  Offline plaintext PIN            : 0 Not supported   
+       2.2  Online PIN                       : 1 Supported       
+       2.3  Signature                        : 0 Not supported   
+       2.4  Offline enciphered PIN           : 0 Not supported   
+       2.5  No CVN Required                  : 0 Not supported   
+       --   2.6-2.8 -- future use --         : 000 N/A
+       3.1  Static Data Authentication (SDA) : 0 Not supported   
+       3.2  Dynamic Data Authentication (DDA): 0 Not supported   
+       3.3  Card Capture                     : 1 Supported       
+       --   3.4     -- future use --         : 0 N/A
+       3.5  Comb DDA/AC (CDA) generation     : 0 Not supported   
+       --   3.6-3.8 -- future use --         : 000 N/A
+     50   App Label            : 0A 56697361204465626974
+     9F35 Terminal Type        : 01 14
+     9F34 C/hldrVerifMethRslts : 03 420300
+        1 (bit2) Next CVM if this CVM fails
+       02 (bits 3 to 8) Verify enc PIN online
+       03 Use when: Term supports the CVM
+       00 CVM result unknown
+     5F34 App PAN Seq Nr       : 01 00
+     9F02 Amt Auth'd - Numeric : 06 000000000000 (0.00)
+     9F03 Amt Other - Numeric  : 06 000000000000 (0.00)
+ 
+(10.9)             --- End of Message ---
+ 
+R  11575 P1A^N502         -> P1A^AUTH2        Len 1250 f--- i 30/01 13:44:07.72
+                                                                         187178
+STM message
+Type: 0200 PC: CV1100 RC: 000 Seq: 2078         Card: 4363932101060777
+Message type         [0200]
+Product ID           [01] ATM
+DPC number           [ 0000
+Tran code            [CV 11 00] (not recognised)
+Route Stat           [00] No error
+      Not-on-us      [0] On us
+      Orig pro       [P1A^N502        ]
+      Hold Orig pro  [0000000000000000]
+      Originator     [1] Device controlled by BASE24
+      Responder      [0] Default (resp not gen yet)
+      Exception      [0] Normal
+Card LN              [0000]
+Rcv inst ID          [00000000000]
+Card FIID            [0000]
+Sharing group        [A                       ]
+Tran date            [180130]
+Tran time            [13440771]
+User field 1         [0]
+Time offset          [ 0 
+Posting date         [180130]
+Acq ichg settle date [000000]
+Iss ichg settle date [000000]
+Terminal FIID        [IDSB]
+Terminal ID          [TM000401        ]
+Terminal LN          [DEV2]
+Branch ID            [0002]
+Region ID            [WEST]
+Sequence number      [2078        ]
+Dep settle imp flag  [0]
+Adj settle imp flag  [0]
+Proc acct ind        [0] Process both From and To accounts.
+Term capture flag    [0] Terminal can capture card
+Track 2              [;4363932101060777=22052260001940?0000000]
+PIN offset           [0000000000000000]
+Member number        [000]
+Terminal type        [22]
+Original currency    [356] Indian rupee            
+Auth currency        [000] (not recognised)
+Settlement currency  [000] (not recognised)
+Auth conv rate       [00000000]
+Settlement conv rate [00000000]
+Conversion date-time [ (invalid)
+Acq inst ID          [00000504594]
+Multi acct           [4]
+Reversal code        [00] 
+From account         [0000000000000000000]
+User field 4         [0]
+To account           [0000000000000000000]
+PIN                  [283ECC1FBD26500B]
+PIN size             [16]
+PIN tries            [0]
+PIN key              [TM000401        ]
+PIN format           [3]
+PIN pad character    [F]
+ANSI offset          [ 0
+User key             [0000000000000000]
+User field 4A        [00]
+Customer bal info    [0] No information given
+Customer bal display [0] Do not print or display
+Amount 1             [ 0.00 
+Amount 2             [ 0.00 
+Amount 3             [ 0.00 
+Deposit bal credit   [ 0.00 
+Avail depository     [0]
+Depository type      [0]
+Completion required  [0]
+Response             [000] App'd with balances
+Terminal name        [IBL NCR NEW TEST ATM     ]
+Terminal owner       [INDUSIND BANK         ]
+Terminal city        [MUMBAI       ]
+Terminal state       [MH ]
+Terminal country     [IN]
+Original seq nr      [000000000000]
+         tran date   [0000]
+         tran time   [00000000]
+         B24 post    [0000]
+Terminal tran allwd  [4] Allowed internationally
+Trace number         [000000]
+Terminal state       [00]
+Terminal county      [000]
+Terminal country     [356]
+User field 5         [0000000000000000]
+Primary dest         [0000000000000000]
+Alternate dest       [0000000000000000]
+Auth dest            [0000000000000000]
+Dest order           [0]
+Routing group        [00000000000]
+Save from acct type  [00]
+Save to acct type    [00]
+Post code            [000400093 ]
+User field 6         [00000000000000000000000000000000000000]
+Format               [0]
+Print size           [080]
+Entry time           [30/01/18 08:14:07.719]
+Exit time            [(zero)]
+Reentry time         [(zero)]
+Card acceptor ID     [00000000000]
+Fwd inst ID          [00000000000]
+Card issuer ID       [00000000000]
+Auth ID response     [000000]
+Track 3              [00000000000000000000000000000000000000000000000000
+                      00000000000000000000000000000000000000000000000000
+                      0000000]
+MICR data            [0000000000000000000000000000000000000000000]
+User field 10        [0]
+Number of tokens: 8  Total Lgth: 378
+ID Len Desc
+-- --- ----------------------------------------------------------------------
+B4  20 ATM/POS EMV status
+   Entry Mode         : 051
+   Term Entry Cap     : 5 - Chip read
+   Last EMV Status    : 1 - Chip card
+   Data suspect       : 0 - CAM data assumed correct
+   PAN Seq Nr         : 00
+   Device Info        : 000400
+   Reason on-line     :     
+   ARQC vfcn status   : 0 - Not verified
+B2  80 ATM/POS EMV request data
+   Bitmap             : 7FF9
+    2 C'gram Info Data   : 80 - ARQC
+    3 Term Verif Rslts   : 808004D000
+      1.1 Offline Authenticn Not Performed  : 1 True
+      1.2 Static Data Authentication Failed : 0 No  
+      1.3 Chip Data Missing                 : 0 No  
+      1.4 PAN on Terminal Exception File    : 0 No  
+      1.5 DDA failed                        : 0 No  
+      1.6 CDA failed                        : 0 No  
+      --  1.7-1.8 -- future use --          : 00 N/A
+      2.1 Chip and Term App Versions Differ : 1 Yes 
+      2.2 Application Expired               : 0 No  
+      2.3 Application not yet effective     : 0 Is  
+      2.4 Svc Not Allowed for Card Product  : 0 Is  
+      2.5 New Card Product                  : 0 No  
+      --  2.6-2.8 -- future use --          : 000 N/A
+      3.1 Cardholder Verification Failed    : 0 No  
+      3.2 Unrecognised CVM or Other         : 0 Othr
+      3.3 Offline PIN Try Limit Exceeded    : 0 No  
+      3.4 PIN Ent Reqd - no pad or not wkg  : 0 Flse
+      3.5 PIN Ent Reqd - has pad, not entrd : 0 Flse
+      3.6 Online PIN entered                : 1 Yes 
+      --  3.7-3.8 -- future use --          : 00 N/A
+      4.1 Transaction Exceeds Floor Limit   : 1 Yes 
+      4.2 Lower Consec Offl Limit Exceeded  : 1 Yes 
+      4.3 Upper Consec Offl Limit Exceeded  : 0 No  
+      4.4 Tran Selected Randomly for Online : 1 Yes 
+      4.5 Merchant Forced Tran Online       : 0 No  
+      --  4.6-4.8 -- future use --          : 000 N/A
+      5.1 Default TDOL used                 : 0 No  
+      5.2 Issuer Authentication Failed      : 0 No  
+      5.3 Script Proc Failed bfr final genAC: 0 No  
+      5.4 Script Proc Failed aft final genAC: 0 No  
+      --  5.5-5.8 -- future use --          : 0000 N/A
+    4 ARQC               : 85E553F3D41473A5
+    5 Amount, auth       : 000000000000
+    6 Amount, other      : 000000000000
+    7 Appl Ichg Profile  : 3C00
+      --  1.1     -- future use --          : 0 N/A
+      1.2 Static Data Authentication        : 0 Not supported   
+      1.3 Dynamic Data Authentication       : 1 Supported       
+      1.4 Cardholder Verification           : 1 Supported       
+      1.5 Terminal Risk Management          : 1 Performed       
+      1.6 Issuer Authentication             : 1 Supported       
+      --  1.7     -- future use --          : 0 N/A
+      1.8 Combined DDA/Gen AC (CDA)         : 0 Not supported   
+      --  2.1-2.8 -- future use --          : 00000000 N/A
+    8 Appl Tran Ctr      : 01D1
+    9 Term Country Code  : 0356 - India                           
+   10 Tran Currency      : 0356 - Indian rupee            
+   11 Tran date          : 30/01/18
+   12 Tran type          : 00
+   13 Unpred number      : 01DFBD5E
+   16 Issuer Appl Data   : {7} 06010A03A00000
+B3  44 ATM/POS EMV discretionary data
+   Bitmap            : 4B00
+    1 Term Capabilities  : 60402020
+      1.1  Card data manual entry           : 0 Not supported   
+      1.2  Card data from mag stripe        : 1 Supported       
+      1.3  Card data from chip              : 1 Supported       
+      --   1.4-1.8 -- future use --         : 00000 N/A
+      2.1  Offline plaintext PIN            : 0 Not supported   
+      2.2  Online PIN                       : 1 Supported       
+      2.3  Signature                        : 0 Not supported   
+      2.4  Offline enciphered PIN           : 0 Not supported   
+      2.5  No CVN Required                  : 0 Not supported   
+      --   2.6-2.8 -- future use --         : 000 N/A
+      3.1  Static Data Authentication (SDA) : 0 Not supported   
+      3.2  Dynamic Data Authentication (DDA): 0 Not supported   
+      3.3  Card Capture                     : 1 Supported       
+      --   3.4     -- future use --         : 0 N/A
+      3.5  Comb DDA/AC (CDA) generation     : 0 Not supported   
+      --   3.6-3.8 -- future use --         : 000 N/A
+    4 Term Type          : 14
+    6 CVM Results        : 420300
+       1 (bit2) Next CVM if this CVM fails
+      02 (bits 3 to 8) Verify enc PIN online
+      03 Use when: Term supports the CVM
+      00 CVM result unknown
+    7 Appl ID            : A0000000031010
+03   6 ATM Release 5.0
+   Error Flag         : 0 - (No information available)
+   Local PIN Vfy      : 0 - Allowed
+   Card Vfcn          : 0 - Not done
+   Complete Trks      : 0 - Acq can acquire and send complete trks
+   UAF rec found      : 0 - No, or not UAF auth
+   Rcpt rqstd         : 2 - Rcpt not available, prtr fault
+B7  86 ATM/POS TLF data
+   RBA                  : 64-bit 0 32-bit 0 0
+   (P)TLF Name          :                                    
+   Tkn retrieval option : 1
+   Logical Network      :     
+   FIID                 :     
+   Card number          :                    
+   Member number        :    
+   Logical Network      :     
+   File format          : 1
+   User field 1         :           
+B8  34 ATM/POS Txn profile
+   APCF profile        : ATM             
+   IPCF profile        :                 
+   Discard reversal    :  
+   Routed to APCF dest :  
+B9  60 ATM/POS Txn description
+   [ISOCV1100                                                   ]
+ 
+(10.9)             --- End of Message ---
+ 
+R  11577 P1A^RAM          -> S1ARAM1          Len 105  f--- i 30/01 13:44:07.72
+                                                                         187179
+Message type not identified
+Possibly an HSM message (RSM5 KQ 10):
+Msg Header      : RSM5
+Command Code    : KQ - ARQC Verification and/or ARPC Generation
+Mode            : 1 - Perform ARQC verification and ARPC generation
+Scheme ID       : 0 - Visa VSDC or UKIS
+IMK Key Scheme  : U - Double-length DES, variant method
+IMK under LMK   : 00D5827FAA75F672FC2EB5329CC03B3A
+PAN,PAN Seq Nr  : 6393210106077700
+ATC             : 01D1
+Unpred Number   : 01DFBD5E
+Tran Data Lgth  : x25 - 37
+Tran Data       :
+   0000000000000000000000000356808004D00003561801300001DFBD5E3C
+   0001D103A00000
+Delimiter       : ;
+ARQC|TC|AAC     : 85E553F3D41473A5
+ARC             : 3030
+ 
+(10.9)             --- End of Message ---
+ 
+R  11579 S1ARAM1          -> P1A^RAM          Len 16   f--- i 30/01 13:44:07.73
+                                                                         187180
+Message type not identified
+Possibly an HSM message (RSM5 KR 00):
+Msg Header      : RSM5
+Response Code   : KR - ARQC Verification and/or ARPC Generation, response
+Error Code      : 00 - OK
+ARPC            : 58FCBFA116487F8E
+ 
+(10.9)             --- End of Message ---
+ 
+R  11581 P1A^RAM          -> S1ARAM2          Len 129  f--- i 30/01 13:44:07.73
+                                                                         187181
+Message type not identified
+Possibly an HSM message (RSM5 DA U2):
+   0: RSM5DAU26678C7366B40B39920ED5936A028ECA5C2EB753475033F312283ECC1FBD265
+  70: 00B01043932101060770123456789012345932101N7FFFF2384FFFFFFFF
+ 
+(10.9)             --- End of Message ---
+ 
+Rec 171  P1B^RAM1         -> S1BRAM1          Len 65   f--- i 30/01 13:44:07.74
+                                                                          48636
+Message type not identified
+Possibly an HSM message (RSM5 CY C8):
+   0: RSM5CYC84C051B9347FD0229B2410748EEF35C1944363932101060777;2205999
+ 
+(10.9)             --- End of Message ---
+ 
+R  11583 S1ARAM2          -> P1A^RAM          Len 8    f--- i 30/01 13:44:07.74
+                                                                         187182
+Message type not identified
+Possibly an HSM message (RSM5 DB 00):
+   0: RSM5DB00
+ 
+(10.9)             --- End of Message ---
+ 
+Rec 172  S1BRAM1          -> P1B^RAM1         Len 8    f--- i 30/01 13:44:07.75
+                                                                          48637
+Message type not identified
+Possibly an HSM message (RSM5 CZ 00):
+Msg Header      : RSM5
+Response Code   : CZ - Verify a VISA CVV or MasterCard CVC, response
+Error Code      : 00 - OK
+ 
+(10.9)             --- End of Message ---
+ 
+R  11585 P1A^AUTH2        -> P1A^N502         Len 1310 f--- i 30/01 13:44:07.75
+                                                                         187183
+STM message
+Type: 9906 PC: CV1100 RC:     Seq: 2078         Card: 15
+Message type         [9906]
+Product ID           [01] ATM
+DPC number           [ 0002
+Tran code            [CV 11 00] (not recognised)
+Route Stat           [00] No error
+      Not-on-us      [0] On us
+      Orig pro       [P1A^N502        ]
+      Hold Orig pro  [0000000000000000]
+      Originator     [1] Device controlled by BASE24
+      Responder      [0] Default (resp not gen yet)
+      Exception      [0] Normal
+Card LN              [DEV2]
+Rcv inst ID          [00000504594]
+Card FIID            [IDSB]
+Sharing group        [A                       ]
+Tran date            [180130]
+Tran time            [13440771]
+User field 1         [0]
+Time offset          [ 0 
+Posting date         [180130]
+Acq ichg settle date [000000]
+Iss ichg settle date [000000]
+Terminal FIID        [IDSB]
+Terminal ID          [TM000401        ]
+Terminal LN          [DEV2]
+Branch ID            [0002]
+Region ID            [WEST]
+Sequence number      [2078        ]
+Dep settle imp flag  [0]
+Adj settle imp flag  [0]
+Proc acct ind        [0] Process both From and To accounts.
+Term capture flag    [0] Terminal can capture card
+Multi acct type      [11]
+Multi acct count     [5]
+Multacct usrfld 7    [ ]
+   Acct nr     [100054779243       ]
+   User fld 8  [ ]
+   Descr       [0054779243]
+   Acct nr     [100006916021       ]
+   User fld 8  [ ]
+   Descr       [0006916021]
+   Acct nr     [100014024998       ]
+   User fld 8  [ ]
+   Descr       [CLOSED    ]
+   Acct nr     [100023100625       ]
+   User fld 8  [ ]
+   Descr       [STOP CHQ  ]
+   Acct nr     [158971101683       ]
+   User fld 8  [ ]
+   Descr       [8971101683]
+Multi acct type      [00]
+Multi acct count     [0]
+Multacct usrfld 7    [ ]
+Multi PIN vfy flag   [1]
+Multi save area      [00000000000000000000000040000000000035600000000000
+                      00000000000000000000000000000000000000000000000000
+                      0000000000000000000000400093 000000000000000000000
+                      000000000000000000080]
+Entry time           [30/01/18 08:14:07.719]
+Exit time            [(zero)]
+Reentry time         [(zero)]
+Card acceptor ID     [00000000000]
+Fwd inst ID          [00000421324]
+Card issuer ID       [00000000000]
+Auth ID response     [000000]
+Track 3              [00000000000000000000000000000000000000000000000000
+                      00000000000000000000000000000000000000000000000000
+                      0000000]
+MICR data            [0000000000000000000000000000000000000000000]
+User field 10        [0]
+Number of tokens: 11  Total Lgth: 438
+ID Len Desc
+-- --- ----------------------------------------------------------------------
+B4  20 ATM/POS EMV status
+   Entry Mode         : 051
+   Term Entry Cap     : 5 - Chip read
+   Last EMV Status    : 1 - Chip card
+   Data suspect       : 0 - CAM data assumed correct
+   PAN Seq Nr         : 00
+   Device Info        : 000400
+   Reason on-line     :     
+   ARQC vfcn status   : 4 - Passed by BASE24
+B2  80 ATM/POS EMV request data
+   Bitmap             : 7FF9
+    2 C'gram Info Data   : 80 - ARQC
+    3 Term Verif Rslts   : 808004D000
+      1.1 Offline Authenticn Not Performed  : 1 True
+      1.2 Static Data Authentication Failed : 0 No  
+      1.3 Chip Data Missing                 : 0 No  
+      1.4 PAN on Terminal Exception File    : 0 No  
+      1.5 DDA failed                        : 0 No  
+      1.6 CDA failed                        : 0 No  
+      --  1.7-1.8 -- future use --          : 00 N/A
+      2.1 Chip and Term App Versions Differ : 1 Yes 
+      2.2 Application Expired               : 0 No  
+      2.3 Application not yet effective     : 0 Is  
+      2.4 Svc Not Allowed for Card Product  : 0 Is  
+      2.5 New Card Product                  : 0 No  
+      --  2.6-2.8 -- future use --          : 000 N/A
+      3.1 Cardholder Verification Failed    : 0 No  
+      3.2 Unrecognised CVM or Other         : 0 Othr
+      3.3 Offline PIN Try Limit Exceeded    : 0 No  
+      3.4 PIN Ent Reqd - no pad or not wkg  : 0 Flse
+      3.5 PIN Ent Reqd - has pad, not entrd : 0 Flse
+      3.6 Online PIN entered                : 1 Yes 
+      --  3.7-3.8 -- future use --          : 00 N/A
+      4.1 Transaction Exceeds Floor Limit   : 1 Yes 
+      4.2 Lower Consec Offl Limit Exceeded  : 1 Yes 
+      4.3 Upper Consec Offl Limit Exceeded  : 0 No  
+      4.4 Tran Selected Randomly for Online : 1 Yes 
+      4.5 Merchant Forced Tran Online       : 0 No  
+      --  4.6-4.8 -- future use --          : 000 N/A
+      5.1 Default TDOL used                 : 0 No  
+      5.2 Issuer Authentication Failed      : 0 No  
+      5.3 Script Proc Failed bfr final genAC: 0 No  
+      5.4 Script Proc Failed aft final genAC: 0 No  
+      --  5.5-5.8 -- future use --          : 0000 N/A
+    4 ARQC               : 85E553F3D41473A5
+    5 Amount, auth       : 000000000000
+    6 Amount, other      : 000000000000
+    7 Appl Ichg Profile  : 3C00
+      --  1.1     -- future use --          : 0 N/A
+      1.2 Static Data Authentication        : 0 Not supported   
+      1.3 Dynamic Data Authentication       : 1 Supported       
+      1.4 Cardholder Verification           : 1 Supported       
+      1.5 Terminal Risk Management          : 1 Performed       
+      1.6 Issuer Authentication             : 1 Supported       
+      --  1.7     -- future use --          : 0 N/A
+      1.8 Combined DDA/Gen AC (CDA)         : 0 Not supported   
+      --  2.1-2.8 -- future use --          : 00000000 N/A
+    8 Appl Tran Ctr      : 01D1
+    9 Term Country Code  : 0356 - India                           
+   10 Tran Currency      : 0356 - Indian rupee            
+   11 Tran date          : 30/01/18
+   12 Tran type          : 00
+   13 Unpred number      : 01DFBD5E
+   16 Issuer Appl Data   : {7} 06010A03A00000
+B3  44 ATM/POS EMV discretionary data
+   Bitmap            : 4B00
+    1 Term Capabilities  : 60402020
+      1.1  Card data manual entry           : 0 Not supported   
+      1.2  Card data from mag stripe        : 1 Supported       
+      1.3  Card data from chip              : 1 Supported       
+      --   1.4-1.8 -- future use --         : 00000 N/A
+      2.1  Offline plaintext PIN            : 0 Not supported   
+      2.2  Online PIN                       : 1 Supported       
+      2.3  Signature                        : 0 Not supported   
+      2.4  Offline enciphered PIN           : 0 Not supported   
+      2.5  No CVN Required                  : 0 Not supported   
+      --   2.6-2.8 -- future use --         : 000 N/A
+      3.1  Static Data Authentication (SDA) : 0 Not supported   
+      3.2  Dynamic Data Authentication (DDA): 0 Not supported   
+      3.3  Card Capture                     : 1 Supported       
+      --   3.4     -- future use --         : 0 N/A
+      3.5  Comb DDA/AC (CDA) generation     : 0 Not supported   
+      --   3.6-3.8 -- future use --         : 000 N/A
+    4 Term Type          : 14
+    6 CVM Results        : 420300
+       1 (bit2) Next CVM if this CVM fails
+      02 (bits 3 to 8) Verify enc PIN online
+      03 Use when: Term supports the CVM
+      00 CVM result unknown
+    7 Appl ID            : A0000000031010
+03   6 ATM Release 5.0
+   Error Flag         : 0 - (No information available)
+   Local PIN Vfy      : 0 - Allowed
+   Card Vfcn          : Y - Done and valid
+   Complete Trks      : 0 - Acq can acquire and send complete trks
+   UAF rec found      : 0 - No, or not UAF auth
+   Rcpt rqstd         : 2 - Rcpt not available, prtr fault
+B7  86 ATM/POS TLF data
+   RBA                  : 64-bit 0 32-bit 0 0
+   (P)TLF Name          :                                    
+   Tkn retrieval option : 1
+   Logical Network      :     
+   FIID                 :     
+   Card number          :                    
+   Member number        :    
+   Logical Network      :     
+   File format          : 1
+   User field 1         :           
+B8  34 ATM/POS Txn profile
+   APCF profile        : ATM             
+   IPCF profile        : ATM             
+   Discard reversal    :  
+   Routed to APCF dest :  
+B9  60 ATM/POS Txn description
+   [ISOCV1100                     ATM CARD VERIFY               ]
+24  10 ATM Flag1
+   Card type          : VD
+   Auth only          : 0
+   Service indicator  : 0
+   Expiry date        : 2205
+   Cash deposit       : 0
+   Card status        : 1
+B5  20 ATM/POS EMV response
+   IAD length         : 10
+   ARPC               : 58FCBFA116487F8E
+   Additional data    : 3030
+   Send script        : N - Don't send card block
+   Gen and send       : N - Don't send card block
+A7  12 ATM Multi-account
+   [011.........]
+ 
+(10.9)             --- End of Message ---
+ 
+R  11587 P1A^N502         -> TM000401         Len 135  f--- i 30/01 13:44:07.75
+                                                                         187184
+NDC/DDC message
+  1: Message Class       : 3 - Terminal data command
+  4: Message Subclass    : 2 - Interactive response
+     Echo                : 1 - Echo keypad to screen
+     Numeric Keys        : 1 - enabled
+     FDKA                : 0 - disabled
+     FDKB                : 0 - disabled
+     FDKC                : 1 - enabled
+     FDKD                : 1 - enabled
+     CANCEL Key          : 1 - enabled
+     FDKF                : - - disabled
+     FDKG                : - - disabled
+     FDKH                : - - disabled
+     FDKI                : - - disabled
+  5: Screen Timeout      : 074 ticks
+  6: Screen data:
+     ..186.BEFR  .BJSAVINGS    .DD100054779243.ED100006916021.FD10001402499
+     8.GD100023100625.HD158971101683.IA6> MORE .J5
+ 
+(10.9)             --- End of Message ---
+ 
+R  11594 TM000401         -> P1A^N502         Len 20   f--- i 30/01 13:44:12.51
+                                                                         187189
+NDC/DDC message
+  1: Message Class       : 1 - Unsolicited message
+     Message Subclass    : 1 - Transaction request
+  2: Logical Unit Nr     : 000
+  5: Top of receipt      : 1 - Will print at top of receipt
+     Msg Coord 'Number'  : 3
+ 11: Buffer B            : 6C
+ 
+(10.9)             --- End of Message ---
+ 
+R  11595 P1A^N502         -> P1A^AUTH2        Len 1310 f--- i 30/01 13:44:12.52
+                                                                         187190
+STM message
+Type: 0200 PC: CV1100 RC: 000 Seq: 2078         Card: 4363932101060777
+Message type         [0200]
+Product ID           [01] ATM
+DPC number           [ 0000
+Tran code            [CV 11 00] (not recognised)
+Route Stat           [00] No error
+      Not-on-us      [0] On us
+      Orig pro       [P1A^N502        ]
+      Hold Orig pro  [0000000000000000]
+      Originator     [1] Device controlled by BASE24
+      Responder      [0] Default (resp not gen yet)
+      Exception      [0] Normal
+Card LN              [0000]
+Rcv inst ID          [00000000000]
+Card FIID            [0000]
+Sharing group        [A                       ]
+Tran date            [180130]
+Tran time            [13440771]
+User field 1         [0]
+Time offset          [ 0 
+Posting date         [180130]
+Acq ichg settle date [000000]
+Iss ichg settle date [000000]
+Terminal FIID        [IDSB]
+Terminal ID          [TM000401        ]
+Terminal LN          [DEV2]
+Branch ID            [0002]
+Region ID            [WEST]
+Sequence number      [2078        ]
+Dep settle imp flag  [0]
+Adj settle imp flag  [0]
+Proc acct ind        [0] Process both From and To accounts.
+Term capture flag    [0] Terminal can capture card
+Track 2              [;4363932101060777=22052260001940?0000000]
+PIN offset           [0000000000000000]
+Member number        [000]
+Terminal type        [22]
+Original currency    [356] Indian rupee            
+Auth currency        [000] (not recognised)
+Settlement currency  [000] (not recognised)
+Auth conv rate       [00000000]
+Settlement conv rate [00000000]
+Conversion date-time [ (invalid)
+Acq inst ID          [00000504594]
+Multi acct           [5]
+Reversal code        [00] 
+From account         [0000000000000000000]
+User field 4         [0]
+To account           [0000000000000000000]
+PIN                  [0000000000000000]
+PIN size             [16]
+PIN tries            [Z]
+PIN key              [TM000401        ]
+PIN format           [3]
+PIN pad character    [F]
+ANSI offset          [ 0
+User key             [0000000000000000]
+User field 4A        [00]
+Customer bal info    [0] No information given
+Customer bal display [0] Do not print or display
+Amount 1             [ 0.00 
+Amount 2             [ 0.00 
+Amount 3             [ 0.00 
+Deposit bal credit   [ 0.00 
+Avail depository     [0]
+Depository type      [0]
+Completion required  [0]
+Response             [000] App'd with balances
+Terminal name        [IBL NCR NEW TEST ATM     ]
+Terminal owner       [INDUSIND BANK         ]
+Terminal city        [MUMBAI       ]
+Terminal state       [MH ]
+Terminal country     [IN]
+Original seq nr      [000000000000]
+         tran date   [0000]
+         tran time   [00000000]
+         B24 post    [0000]
+Terminal tran allwd  [4] Allowed internationally
+Trace number         [000000]
+Terminal state       [00]
+Terminal county      [000]
+Terminal country     [356]
+User field 5         [0000000000000000]
+Primary dest         [0000000000000000]
+Alternate dest       [0000000000000000]
+Auth dest            [0000000000000000]
+Dest order           [0]
+Routing group        [00000000000]
+Save from acct type  [00]
+Save to acct type    [00]
+Post code            [000400093 ]
+User field 6         [00000000000000000000000000000000000000]
+Format               [0]
+Print size           [080]
+Entry time           [30/01/18 08:14:07.719]
+Exit time            [(zero)]
+Reentry time         [(zero)]
+Card acceptor ID     [00000000000]
+Fwd inst ID          [00000000000]
+Card issuer ID       [00000000000]
+Auth ID response     [000000]
+Track 3              [00000000000000000000000000000000000000000000000000
+                      00000000000000000000000000000000000000000000000000
+                      0000000]
+MICR data            [0000000000000000000000000000000000000000000]
+User field 10        [0]
+Number of tokens: 11  Total Lgth: 438
+ID Len Desc
+-- --- ----------------------------------------------------------------------
+B4  20 ATM/POS EMV status
+   Entry Mode         : 051
+   Term Entry Cap     : 5 - Chip read
+   Last EMV Status    : 1 - Chip card
+   Data suspect       : 0 - CAM data assumed correct
+   PAN Seq Nr         : 00
+   Device Info        : 000400
+   Reason on-line     :     
+   ARQC vfcn status   : 4 - Passed by BASE24
+B2  80 ATM/POS EMV request data
+   Bitmap             : 7FF9
+    2 C'gram Info Data   : 80 - ARQC
+    3 Term Verif Rslts   : 808004D000
+      1.1 Offline Authenticn Not Performed  : 1 True
+      1.2 Static Data Authentication Failed : 0 No  
+      1.3 Chip Data Missing                 : 0 No  
+      1.4 PAN on Terminal Exception File    : 0 No  
+      1.5 DDA failed                        : 0 No  
+      1.6 CDA failed                        : 0 No  
+      --  1.7-1.8 -- future use --          : 00 N/A
+      2.1 Chip and Term App Versions Differ : 1 Yes 
+      2.2 Application Expired               : 0 No  
+      2.3 Application not yet effective     : 0 Is  
+      2.4 Svc Not Allowed for Card Product  : 0 Is  
+      2.5 New Card Product                  : 0 No  
+      --  2.6-2.8 -- future use --          : 000 N/A
+      3.1 Cardholder Verification Failed    : 0 No  
+      3.2 Unrecognised CVM or Other         : 0 Othr
+      3.3 Offline PIN Try Limit Exceeded    : 0 No  
+      3.4 PIN Ent Reqd - no pad or not wkg  : 0 Flse
+      3.5 PIN Ent Reqd - has pad, not entrd : 0 Flse
+      3.6 Online PIN entered                : 1 Yes 
+      --  3.7-3.8 -- future use --          : 00 N/A
+      4.1 Transaction Exceeds Floor Limit   : 1 Yes 
+      4.2 Lower Consec Offl Limit Exceeded  : 1 Yes 
+      4.3 Upper Consec Offl Limit Exceeded  : 0 No  
+      4.4 Tran Selected Randomly for Online : 1 Yes 
+      4.5 Merchant Forced Tran Online       : 0 No  
+      --  4.6-4.8 -- future use --          : 000 N/A
+      5.1 Default TDOL used                 : 0 No  
+      5.2 Issuer Authentication Failed      : 0 No  
+      5.3 Script Proc Failed bfr final genAC: 0 No  
+      5.4 Script Proc Failed aft final genAC: 0 No  
+      --  5.5-5.8 -- future use --          : 0000 N/A
+    4 ARQC               : 85E553F3D41473A5
+    5 Amount, auth       : 000000000000
+    6 Amount, other      : 000000000000
+    7 Appl Ichg Profile  : 3C00
+      --  1.1     -- future use --          : 0 N/A
+      1.2 Static Data Authentication        : 0 Not supported   
+      1.3 Dynamic Data Authentication       : 1 Supported       
+      1.4 Cardholder Verification           : 1 Supported       
+      1.5 Terminal Risk Management          : 1 Performed       
+      1.6 Issuer Authentication             : 1 Supported       
+      --  1.7     -- future use --          : 0 N/A
+      1.8 Combined DDA/Gen AC (CDA)         : 0 Not supported   
+      --  2.1-2.8 -- future use --          : 00000000 N/A
+    8 Appl Tran Ctr      : 01D1
+    9 Term Country Code  : 0356 - India                           
+   10 Tran Currency      : 0356 - Indian rupee            
+   11 Tran date          : 30/01/18
+   12 Tran type          : 00
+   13 Unpred number      : 01DFBD5E
+   16 Issuer Appl Data   : {7} 06010A03A00000
+B3  44 ATM/POS EMV discretionary data
+   Bitmap            : 4B00
+    1 Term Capabilities  : 60402020
+      1.1  Card data manual entry           : 0 Not supported   
+      1.2  Card data from mag stripe        : 1 Supported       
+      1.3  Card data from chip              : 1 Supported       
+      --   1.4-1.8 -- future use --         : 00000 N/A
+      2.1  Offline plaintext PIN            : 0 Not supported   
+      2.2  Online PIN                       : 1 Supported       
+      2.3  Signature                        : 0 Not supported   
+      2.4  Offline enciphered PIN           : 0 Not supported   
+      2.5  No CVN Required                  : 0 Not supported   
+      --   2.6-2.8 -- future use --         : 000 N/A
+      3.1  Static Data Authentication (SDA) : 0 Not supported   
+      3.2  Dynamic Data Authentication (DDA): 0 Not supported   
+      3.3  Card Capture                     : 1 Supported       
+      --   3.4     -- future use --         : 0 N/A
+      3.5  Comb DDA/AC (CDA) generation     : 0 Not supported   
+      --   3.6-3.8 -- future use --         : 000 N/A
+    4 Term Type          : 14
+    6 CVM Results        : 420300
+       1 (bit2) Next CVM if this CVM fails
+      02 (bits 3 to 8) Verify enc PIN online
+      03 Use when: Term supports the CVM
+      00 CVM result unknown
+    7 Appl ID            : A0000000031010
+03   6 ATM Release 5.0
+   Error Flag         : 0 - (No information available)
+   Local PIN Vfy      : 0 - Allowed
+   Card Vfcn          : Y - Done and valid
+   Complete Trks      : 0 - Acq can acquire and send complete trks
+   UAF rec found      : 0 - No, or not UAF auth
+   Rcpt rqstd         : 2 - Rcpt not available, prtr fault
+B7  86 ATM/POS TLF data
+   RBA                  : 64-bit 0 32-bit 0 0
+   (P)TLF Name          :                                    
+   Tkn retrieval option : 1
+   Logical Network      :     
+   FIID                 :     
+   Card number          :                    
+   Member number        :    
+   Logical Network      :     
+   File format          : 1
+   User field 1         :           
+B8  34 ATM/POS Txn profile
+   APCF profile        : ATM             
+   IPCF profile        : ATM             
+   Discard reversal    :  
+   Routed to APCF dest :  
+B9  60 ATM/POS Txn description
+   [ISOCV1100                     ATM CARD VERIFY               ]
+24  10 ATM Flag1
+   Card type          : VD
+   Auth only          : 0
+   Service indicator  : 0
+   Expiry date        : 2205
+   Cash deposit       : 0
+   Card status        : 1
+B5  20 ATM/POS EMV response
+   IAD length         : 10
+   ARPC               : 58FCBFA116487F8E
+   Additional data    : 3030
+   Send script        : N - Don't send card block
+   Gen and send       : N - Don't send card block
+A7  12 ATM Multi-account
+   [001.........]
+ 
+(10.9)             --- End of Message ---
+ 
+R  11597 P1A^RAM          -> S1ARAM1          Len 65   f--- i 30/01 13:44:12.52
+                                                                         187191
+Message type not identified
+Possibly an HSM message (RSM5 CY C8):
+   0: RSM5CYC84C051B9347FD0229B2410748EEF35C1944363932101060777;2205999
+ 
+(10.9)             --- End of Message ---
+ 
+R  11599 S1ARAM1          -> P1A^RAM          Len 8    f--- i 30/01 13:44:12.53
+                                                                         187192
+Message type not identified
+Possibly an HSM message (RSM5 CZ 00):
+Msg Header      : RSM5
+Response Code   : CZ - Verify a VISA CVV or MasterCard CVC, response
+Error Code      : 00 - OK
+ 
+(10.9)             --- End of Message ---
+ 
+R  11601 P1A^AUTH2        -> P1A^N502         Len 1310 f--- i 30/01 13:44:12.53
+                                                                         187193
+STM message
+Type: 9906 PC: CV1100 RC:     Seq: 2078         Card: 15
+Message type         [9906]
+Product ID           [01] ATM
+DPC number           [ 0002
+Tran code            [CV 11 00] (not recognised)
+Route Stat           [00] No error
+      Not-on-us      [0] On us
+      Orig pro       [P1A^N502        ]
+      Hold Orig pro  [0000000000000000]
+      Originator     [1] Device controlled by BASE24
+      Responder      [0] Default (resp not gen yet)
+      Exception      [0] Normal
+Card LN              [DEV2]
+Rcv inst ID          [00000504594]
+Card FIID            [IDSB]
+Sharing group        [A                       ]
+Tran date            [180130]
+Tran time            [13440771]
+User field 1         [0]
+Time offset          [ 0 
+Posting date         [180130]
+Acq ichg settle date [000000]
+Iss ichg settle date [000000]
+Terminal FIID        [IDSB]
+Terminal ID          [TM000401        ]
+Terminal LN          [DEV2]
+Branch ID            [0002]
+Region ID            [WEST]
+Sequence number      [2078        ]
+Dep settle imp flag  [0]
+Adj settle imp flag  [0]
+Proc acct ind        [0] Process both From and To accounts.
+Term capture flag    [0] Terminal can capture card
+Multi acct type      [11]
+Multi acct count     [5]
+Multacct usrfld 7    [ ]
+   Acct nr     [100000351752       ]
+   User fld 8  [ ]
+   Descr       [0000351752]
+   Acct nr     [100025574189       ]
+   User fld 8  [ ]
+   Descr       [0025574189]
+   Acct nr     [100000000786       ]
+   User fld 8  [ ]
+   Descr       [0000000786]
+   Acct nr     [100055055362       ]
+   User fld 8  [ ]
+   Descr       [INSUF     ]
+   Acct nr     [100000000000       ]
+   User fld 8  [ ]
+   Descr       [INELI     ]
+Multi acct type      [00]
+Multi acct count     [0]
+Multacct usrfld 7    [ ]
+Multi PIN vfy flag   [1]
+Multi save area      [00000000000000000000000040000000000035600000000000
+                      00000000000000000000000000000000000000000000000000
+                      0000000000000000000000400093 000000000000000000000
+                      000000000000000000080]
+Entry time           [30/01/18 08:14:07.719]
+Exit time            [(zero)]
+Reentry time         [(zero)]
+Card acceptor ID     [00000000000]
+Fwd inst ID          [00000421324]
+Card issuer ID       [00000000000]
+Auth ID response     [000000]
+Track 3              [00000000000000000000000000000000000000000000000000
+                      00000000000000000000000000000000000000000000000000
+                      0000000]
+MICR data            [0000000000000000000000000000000000000000000]
+User field 10        [0]
+Number of tokens: 11  Total Lgth: 438
+ID Len Desc
+-- --- ----------------------------------------------------------------------
+B4  20 ATM/POS EMV status
+   Entry Mode         : 051
+   Term Entry Cap     : 5 - Chip read
+   Last EMV Status    : 1 - Chip card
+   Data suspect       : 0 - CAM data assumed correct
+   PAN Seq Nr         : 00
+   Device Info        : 000400
+   Reason on-line     :     
+   ARQC vfcn status   : 4 - Passed by BASE24
+B2  80 ATM/POS EMV request data
+   Bitmap             : 7FF9
+    2 C'gram Info Data   : 80 - ARQC
+    3 Term Verif Rslts   : 808004D000
+      1.1 Offline Authenticn Not Performed  : 1 True
+      1.2 Static Data Authentication Failed : 0 No  
+      1.3 Chip Data Missing                 : 0 No  
+      1.4 PAN on Terminal Exception File    : 0 No  
+      1.5 DDA failed                        : 0 No  
+      1.6 CDA failed                        : 0 No  
+      --  1.7-1.8 -- future use --          : 00 N/A
+      2.1 Chip and Term App Versions Differ : 1 Yes 
+      2.2 Application Expired               : 0 No  
+      2.3 Application not yet effective     : 0 Is  
+      2.4 Svc Not Allowed for Card Product  : 0 Is  
+      2.5 New Card Product                  : 0 No  
+      --  2.6-2.8 -- future use --          : 000 N/A
+      3.1 Cardholder Verification Failed    : 0 No  
+      3.2 Unrecognised CVM or Other         : 0 Othr
+      3.3 Offline PIN Try Limit Exceeded    : 0 No  
+      3.4 PIN Ent Reqd - no pad or not wkg  : 0 Flse
+      3.5 PIN Ent Reqd - has pad, not entrd : 0 Flse
+      3.6 Online PIN entered                : 1 Yes 
+      --  3.7-3.8 -- future use --          : 00 N/A
+      4.1 Transaction Exceeds Floor Limit   : 1 Yes 
+      4.2 Lower Consec Offl Limit Exceeded  : 1 Yes 
+      4.3 Upper Consec Offl Limit Exceeded  : 0 No  
+      4.4 Tran Selected Randomly for Online : 1 Yes 
+      4.5 Merchant Forced Tran Online       : 0 No  
+      --  4.6-4.8 -- future use --          : 000 N/A
+      5.1 Default TDOL used                 : 0 No  
+      5.2 Issuer Authentication Failed      : 0 No  
+      5.3 Script Proc Failed bfr final genAC: 0 No  
+      5.4 Script Proc Failed aft final genAC: 0 No  
+      --  5.5-5.8 -- future use --          : 0000 N/A
+    4 ARQC               : 85E553F3D41473A5
+    5 Amount, auth       : 000000000000
+    6 Amount, other      : 000000000000
+    7 Appl Ichg Profile  : 3C00
+      --  1.1     -- future use --          : 0 N/A
+      1.2 Static Data Authentication        : 0 Not supported   
+      1.3 Dynamic Data Authentication       : 1 Supported       
+      1.4 Cardholder Verification           : 1 Supported       
+      1.5 Terminal Risk Management          : 1 Performed       
+      1.6 Issuer Authentication             : 1 Supported       
+      --  1.7     -- future use --          : 0 N/A
+      1.8 Combined DDA/Gen AC (CDA)         : 0 Not supported   
+      --  2.1-2.8 -- future use --          : 00000000 N/A
+    8 Appl Tran Ctr      : 01D1
+    9 Term Country Code  : 0356 - India                           
+   10 Tran Currency      : 0356 - Indian rupee            
+   11 Tran date          : 30/01/18
+   12 Tran type          : 00
+   13 Unpred number      : 01DFBD5E
+   16 Issuer Appl Data   : {7} 06010A03A00000
+B3  44 ATM/POS EMV discretionary data
+   Bitmap            : 4B00
+    1 Term Capabilities  : 60402020
+      1.1  Card data manual entry           : 0 Not supported   
+      1.2  Card data from mag stripe        : 1 Supported       
+      1.3  Card data from chip              : 1 Supported       
+      --   1.4-1.8 -- future use --         : 00000 N/A
+      2.1  Offline plaintext PIN            : 0 Not supported   
+      2.2  Online PIN                       : 1 Supported       
+      2.3  Signature                        : 0 Not supported   
+      2.4  Offline enciphered PIN           : 0 Not supported   
+      2.5  No CVN Required                  : 0 Not supported   
+      --   2.6-2.8 -- future use --         : 000 N/A
+      3.1  Static Data Authentication (SDA) : 0 Not supported   
+      3.2  Dynamic Data Authentication (DDA): 0 Not supported   
+      3.3  Card Capture                     : 1 Supported       
+      --   3.4     -- future use --         : 0 N/A
+      3.5  Comb DDA/AC (CDA) generation     : 0 Not supported   
+      --   3.6-3.8 -- future use --         : 000 N/A
+    4 Term Type          : 14
+    6 CVM Results        : 420300
+       1 (bit2) Next CVM if this CVM fails
+      02 (bits 3 to 8) Verify enc PIN online
+      03 Use when: Term supports the CVM
+      00 CVM result unknown
+    7 Appl ID            : A0000000031010
+03   6 ATM Release 5.0
+   Error Flag         : 0 - (No information available)
+   Local PIN Vfy      : 0 - Allowed
+   Card Vfcn          : Y - Done and valid
+   Complete Trks      : 0 - Acq can acquire and send complete trks
+   UAF rec found      : 0 - No, or not UAF auth
+   Rcpt rqstd         : 2 - Rcpt not available, prtr fault
+B7  86 ATM/POS TLF data
+   RBA                  : 64-bit 0 32-bit 0 0
+   (P)TLF Name          :                                    
+   Tkn retrieval option : 1
+   Logical Network      :     
+   FIID                 :     
+   Card number          :                    
+   Member number        :    
+   Logical Network      :     
+   File format          : 1
+   User field 1         :           
+B8  34 ATM/POS Txn profile
+   APCF profile        : ATM             
+   IPCF profile        : ATM             
+   Discard reversal    :  
+   Routed to APCF dest :  
+B9  60 ATM/POS Txn description
+   [ISOCV1100                     ATM CARD VERIFY               ]
+24  10 ATM Flag1
+   Card type          : VD
+   Auth only          : 0
+   Service indicator  : 0
+   Expiry date        : 2205
+   Cash deposit       : 0
+   Card status        : 1
+B5  20 ATM/POS EMV response
+   IAD length         : 10
+   ARPC               : 58FCBFA116487F8E
+   Additional data    : 3030
+   Send script        : N - Don't send card block
+   Gen and send       : N - Don't send card block
+A7  12 ATM Multi-account
+   [000.........]
+ 
+(10.9)             --- End of Message ---
+ 
+R  11603 P1A^N502         -> TM000401         Len 135  f--- i 30/01 13:44:12.53
+                                                                         187194
+NDC/DDC message
+  1: Message Class       : 3 - Terminal data command
+  4: Message Subclass    : 2 - Interactive response
+     Echo                : 1 - Echo keypad to screen
+     Numeric Keys        : 1 - enabled
+     FDKA                : 0 - disabled
+     FDKB                : 0 - disabled
+     FDKC                : 1 - enabled
+     FDKD                : 1 - enabled
+     CANCEL Key          : 1 - enabled
+     FDKF                : - - disabled
+     FDKG                : - - disabled
+     FDKH                : - - disabled
+     FDKI                : - - disabled
+  5: Screen Timeout      : 074 ticks
+  6: Screen data:
+     ..186.BEFR  .BJSAVINGS    .DD100000351752.ED100025574189.FD10000000078
+     6.GD100055055362.HD100000000000.IA6> MORE .J5
+ 
+(10.9)             --- End of Message ---
+ 
+R  11606 TM000401         -> P1A^N502         Len 20   f--- i 30/01 13:44:15.67
+                                                                         187195
+NDC/DDC message
+  1: Message Class       : 1 - Unsolicited message
+     Message Subclass    : 1 - Transaction request
+  2: Logical Unit Nr     : 000
+  5: Top of receipt      : 1 - Will print at top of receipt
+     Msg Coord 'Number'  : 4
+ 11: Buffer B            : 2C
+ 
+(10.9)             --- End of Message ---
+ 
+R  11607 P1A^N502         -> P1A^AUTH2        Len 1292 f--- i 30/01 13:44:15.67
+                                                                         187196
+STM message
+Type: 0200 PC: CV1100 RC: 000 Seq: 2078         Card: 4363932101060777
+Message type         [0200]
+Product ID           [01] ATM
+DPC number           [ 0000
+Tran code            [CV 11 00] (not recognised)
+Route Stat           [00] No error
+      Not-on-us      [0] On us
+      Orig pro       [P1A^N502        ]
+      Hold Orig pro  [0000000000000000]
+      Originator     [1] Device controlled by BASE24
+      Responder      [0] Default (resp not gen yet)
+      Exception      [0] Normal
+Card LN              [0000]
+Rcv inst ID          [00000000000]
+Card FIID            [0000]
+Sharing group        [A                       ]
+Tran date            [180130]
+Tran time            [13440771]
+User field 1         [0]
+Time offset          [ 0 
+Posting date         [180130]
+Acq ichg settle date [000000]
+Iss ichg settle date [000000]
+Terminal FIID        [IDSB]
+Terminal ID          [TM000401        ]
+Terminal LN          [DEV2]
+Branch ID            [0002]
+Region ID            [WEST]
+Sequence number      [2078        ]
+Dep settle imp flag  [0]
+Adj settle imp flag  [0]
+Proc acct ind        [0] Process both From and To accounts.
+Term capture flag    [0] Terminal can capture card
+Track 2              [;4363932101060777=22052260001940?0000000]
+PIN offset           [0000000000000000]
+Member number        [000]
+Terminal type        [22]
+Original currency    [356] Indian rupee            
+Auth currency        [000] (not recognised)
+Settlement currency  [000] (not recognised)
+Auth conv rate       [00000000]
+Settlement conv rate [00000000]
+Conversion date-time [ (invalid)
+Acq inst ID          [00000504594]
+Multi acct           [5]
+Reversal code        [00] 
+From account         [100025574189       ]
+User field 4         [0]
+To account           [0000000000000000000]
+PIN                  [0000000000000000]
+PIN size             [16]
+PIN tries            [Z]
+PIN key              [TM000401        ]
+PIN format           [3]
+PIN pad character    [F]
+ANSI offset          [ 0
+User key             [0000000000000000]
+User field 4A        [00]
+Customer bal info    [0] No information given
+Customer bal display [0] Do not print or display
+Amount 1             [ 0.00 
+Amount 2             [ 0.00 
+Amount 3             [ 0.00 
+Deposit bal credit   [ 0.00 
+Avail depository     [0]
+Depository type      [0]
+Completion required  [0]
+Response             [000] App'd with balances
+Terminal name        [IBL NCR NEW TEST ATM     ]
+Terminal owner       [INDUSIND BANK         ]
+Terminal city        [MUMBAI       ]
+Terminal state       [MH ]
+Terminal country     [IN]
+Original seq nr      [000000000000]
+         tran date   [0000]
+         tran time   [00000000]
+         B24 post    [0000]
+Terminal tran allwd  [4] Allowed internationally
+Trace number         [000000]
+Terminal state       [00]
+Terminal county      [000]
+Terminal country     [356]
+User field 5         [0000000000000000]
+Primary dest         [0000000000000000]
+Alternate dest       [0000000000000000]
+Auth dest            [0000000000000000]
+Dest order           [0]
+Routing group        [00000000000]
+Save from acct type  [00]
+Save to acct type    [00]
+Post code            [000400093 ]
+User field 6         [00000000000000000000000000000000000000]
+Format               [0]
+Print size           [080]
+Entry time           [30/01/18 08:14:07.719]
+Exit time            [(zero)]
+Reentry time         [(zero)]
+Card acceptor ID     [00000000000]
+Fwd inst ID          [00000000000]
+Card issuer ID       [00000000000]
+Auth ID response     [000000]
+Track 3              [00000000000000000000000000000000000000000000000000
+                      00000000000000000000000000000000000000000000000000
+                      0000000]
+MICR data            [0000000000000000000000000000000000000000000]
+User field 10        [0]
+Number of tokens: 10  Total Lgth: 420
+ID Len Desc
+-- --- ----------------------------------------------------------------------
+B4  20 ATM/POS EMV status
+   Entry Mode         : 051
+   Term Entry Cap     : 5 - Chip read
+   Last EMV Status    : 1 - Chip card
+   Data suspect       : 0 - CAM data assumed correct
+   PAN Seq Nr         : 00
+   Device Info        : 000400
+   Reason on-line     :     
+   ARQC vfcn status   : 4 - Passed by BASE24
+B2  80 ATM/POS EMV request data
+   Bitmap             : 7FF9
+    2 C'gram Info Data   : 80 - ARQC
+    3 Term Verif Rslts   : 808004D000
+      1.1 Offline Authenticn Not Performed  : 1 True
+      1.2 Static Data Authentication Failed : 0 No  
+      1.3 Chip Data Missing                 : 0 No  
+      1.4 PAN on Terminal Exception File    : 0 No  
+      1.5 DDA failed                        : 0 No  
+      1.6 CDA failed                        : 0 No  
+      --  1.7-1.8 -- future use --          : 00 N/A
+      2.1 Chip and Term App Versions Differ : 1 Yes 
+      2.2 Application Expired               : 0 No  
+      2.3 Application not yet effective     : 0 Is  
+      2.4 Svc Not Allowed for Card Product  : 0 Is  
+      2.5 New Card Product                  : 0 No  
+      --  2.6-2.8 -- future use --          : 000 N/A
+      3.1 Cardholder Verification Failed    : 0 No  
+      3.2 Unrecognised CVM or Other         : 0 Othr
+      3.3 Offline PIN Try Limit Exceeded    : 0 No  
+      3.4 PIN Ent Reqd - no pad or not wkg  : 0 Flse
+      3.5 PIN Ent Reqd - has pad, not entrd : 0 Flse
+      3.6 Online PIN entered                : 1 Yes 
+      --  3.7-3.8 -- future use --          : 00 N/A
+      4.1 Transaction Exceeds Floor Limit   : 1 Yes 
+      4.2 Lower Consec Offl Limit Exceeded  : 1 Yes 
+      4.3 Upper Consec Offl Limit Exceeded  : 0 No  
+      4.4 Tran Selected Randomly for Online : 1 Yes 
+      4.5 Merchant Forced Tran Online       : 0 No  
+      --  4.6-4.8 -- future use --          : 000 N/A
+      5.1 Default TDOL used                 : 0 No  
+      5.2 Issuer Authentication Failed      : 0 No  
+      5.3 Script Proc Failed bfr final genAC: 0 No  
+      5.4 Script Proc Failed aft final genAC: 0 No  
+      --  5.5-5.8 -- future use --          : 0000 N/A
+    4 ARQC               : 85E553F3D41473A5
+    5 Amount, auth       : 000000000000
+    6 Amount, other      : 000000000000
+    7 Appl Ichg Profile  : 3C00
+      --  1.1     -- future use --          : 0 N/A
+      1.2 Static Data Authentication        : 0 Not supported   
+      1.3 Dynamic Data Authentication       : 1 Supported       
+      1.4 Cardholder Verification           : 1 Supported       
+      1.5 Terminal Risk Management          : 1 Performed       
+      1.6 Issuer Authentication             : 1 Supported       
+      --  1.7     -- future use --          : 0 N/A
+      1.8 Combined DDA/Gen AC (CDA)         : 0 Not supported   
+      --  2.1-2.8 -- future use --          : 00000000 N/A
+    8 Appl Tran Ctr      : 01D1
+    9 Term Country Code  : 0356 - India                           
+   10 Tran Currency      : 0356 - Indian rupee            
+   11 Tran date          : 30/01/18
+   12 Tran type          : 00
+   13 Unpred number      : 01DFBD5E
+   16 Issuer Appl Data   : {7} 06010A03A00000
+B3  44 ATM/POS EMV discretionary data
+   Bitmap            : 4B00
+    1 Term Capabilities  : 60402020
+      1.1  Card data manual entry           : 0 Not supported   
+      1.2  Card data from mag stripe        : 1 Supported       
+      1.3  Card data from chip              : 1 Supported       
+      --   1.4-1.8 -- future use --         : 00000 N/A
+      2.1  Offline plaintext PIN            : 0 Not supported   
+      2.2  Online PIN                       : 1 Supported       
+      2.3  Signature                        : 0 Not supported   
+      2.4  Offline enciphered PIN           : 0 Not supported   
+      2.5  No CVN Required                  : 0 Not supported   
+      --   2.6-2.8 -- future use --         : 000 N/A
+      3.1  Static Data Authentication (SDA) : 0 Not supported   
+      3.2  Dynamic Data Authentication (DDA): 0 Not supported   
+      3.3  Card Capture                     : 1 Supported       
+      --   3.4     -- future use --         : 0 N/A
+      3.5  Comb DDA/AC (CDA) generation     : 0 Not supported   
+      --   3.6-3.8 -- future use --         : 000 N/A
+    4 Term Type          : 14
+    6 CVM Results        : 420300
+       1 (bit2) Next CVM if this CVM fails
+      02 (bits 3 to 8) Verify enc PIN online
+      03 Use when: Term supports the CVM
+      00 CVM result unknown
+    7 Appl ID            : A0000000031010
+03   6 ATM Release 5.0
+   Error Flag         : 0 - (No information available)
+   Local PIN Vfy      : 0 - Allowed
+   Card Vfcn          : Y - Done and valid
+   Complete Trks      : 0 - Acq can acquire and send complete trks
+   UAF rec found      : 0 - No, or not UAF auth
+   Rcpt rqstd         : 2 - Rcpt not available, prtr fault
+B7  86 ATM/POS TLF data
+   RBA                  : 64-bit 0 32-bit 0 0
+   (P)TLF Name          :                                    
+   Tkn retrieval option : 1
+   Logical Network      :     
+   FIID                 :     
+   Card number          :                    
+   Member number        :    
+   Logical Network      :     
+   File format          : 1
+   User field 1         :           
+B8  34 ATM/POS Txn profile
+   APCF profile        : ATM             
+   IPCF profile        : ATM             
+   Discard reversal    :  
+   Routed to APCF dest :  
+B9  60 ATM/POS Txn description
+   [ISOCV1100                     ATM CARD VERIFY               ]
+24  10 ATM Flag1
+   Card type          : VD
+   Auth only          : 0
+   Service indicator  : 0
+   Expiry date        : 2205
+   Cash deposit       : 0
+   Card status        : 1
+B5  20 ATM/POS EMV response
+   IAD length         : 10
+   ARPC               : 58FCBFA116487F8E
+   Additional data    : 3030
+   Send script        : N - Don't send card block
+   Gen and send       : N - Don't send card block
+ 
+(10.9)             --- End of Message ---
+ 
+R  11609 P1A^AUTH2        -> P1A^N502         Len 1332 f--- i 30/01 13:44:15.68
+                                                                         187197
+STM message
+Type: 0210 PC: CV1100 RC: 001 Seq: 2078         Card: 4363932101060777
+Message type         [0210]
+Product ID           [01] ATM
+DPC number           [ 0002
+Tran code            [CV 11 00] (not recognised)
+Route Stat           [00] No error
+      Not-on-us      [0] On us
+      Orig pro       [P1A^N502        ]
+      Hold Orig pro  [0000000000000000]
+      Originator     [1] Device controlled by BASE24
+      Responder      [3] Authorisation process
+      Exception      [0] Normal
+Card LN              [DEV2]
+Rcv inst ID          [00000504594]
+Card FIID            [IDSB]
+Sharing group        [A                       ]
+Tran date            [180130]
+Tran time            [13440771]
+User field 1         [0]
+Time offset          [ 0 
+Posting date         [180130]
+Acq ichg settle date [000000]
+Iss ichg settle date [000000]
+Terminal FIID        [IDSB]
+Terminal ID          [TM000401        ]
+Terminal LN          [DEV2]
+Branch ID            [0002]
+Region ID            [WEST]
+Sequence number      [2078        ]
+Dep settle imp flag  [0]
+Adj settle imp flag  [0]
+Proc acct ind        [0] Process both From and To accounts.
+Term capture flag    [0] Terminal can capture card
+Track 2              [;4363932101060777=22052260000000?0000000]
+PIN offset           [0000000000000000]
+Member number        [000]
+Terminal type        [22]
+Original currency    [356] Indian rupee            
+Auth currency        [000] (not recognised)
+Settlement currency  [000] (not recognised)
+Auth conv rate       [00000000]
+Settlement conv rate [00000000]
+Conversion date-time [ (invalid)
+Acq inst ID          [00000504594]
+Multi acct           [5]
+Reversal code        [00] 
+From account         [100025574189       ]
+User field 4         [0]
+To account           [0000000000000000000]
+PIN                  [0000000000000000]
+PIN size             [16]
+PIN tries            [Z]
+PIN key              [TM000401        ]
+PIN format           [3]
+PIN pad character    [F]
+ANSI offset          [ 0
+User key             [0000000000000000]
+User field 4A        [00]
+Customer bal info    [0] No information given
+Customer bal display [3] Print and display
+Amount 1             [ 0.00 
+Amount 2             [ 0.00 
+Amount 3             [ 0.00 
+Deposit bal credit   [ 0.00 
+Avail depository     [0]
+Depository type      [0]
+Completion required  [0]
+Response             [001] App'd, no balances for display
+Terminal name        [IBL NCR NEW TEST ATM     ]
+Terminal owner       [INDUSIND BANK         ]
+Terminal city        [MUMBAI       ]
+Terminal state       [MH ]
+Terminal country     [IN]
+Original seq nr      [000000000000]
+         tran date   [0000]
+         tran time   [00000000]
+         B24 post    [0000]
+Terminal tran allwd  [4] Allowed internationally
+Trace number         [000000]
+Terminal state       [00]
+Terminal county      [000]
+Terminal country     [356]
+User field 5         [0000000000000000]
+Primary dest         [0000000000000000]
+Alternate dest       [0000000000000000]
+Auth dest            [P1A^AUTH2       ]
+Dest order           [0]
+Routing group        [00000000000]
+Save from acct type  [11]
+Save to acct type    [00]
+Post code            [000400093 ]
+User field 6         [00000000000000000000000000000000000000]
+Format               [0]
+Print size           [080]
+Entry time           [30/01/18 08:14:07.719]
+Exit time            [(zero)]
+Reentry time         [(zero)]
+Card acceptor ID     [00000000000]
+Fwd inst ID          [00000421324]
+Card issuer ID       [00000000000]
+Auth ID response     [782651]
+Track 3              [00000000000000000000000000000000000000000000000000
+                      00000000000000000000000000000000000000000000000000
+                      0000000]
+MICR data            [0000000000000000000000000000000000000000000]
+User field 10        [0]
+Number of tokens: 11  Total Lgth: 460
+ID Len Desc
+-- --- ----------------------------------------------------------------------
+B4  20 ATM/POS EMV status
+   Entry Mode         : 051
+   Term Entry Cap     : 5 - Chip read
+   Last EMV Status    : 1 - Chip card
+   Data suspect       : 0 - CAM data assumed correct
+   PAN Seq Nr         : 00
+   Device Info        : 000400
+   Reason on-line     :     
+   ARQC vfcn status   : 4 - Passed by BASE24
+B2  80 ATM/POS EMV request data
+   Bitmap             : 7FF9
+    2 C'gram Info Data   : 80 - ARQC
+    3 Term Verif Rslts   : 808004D000
+      1.1 Offline Authenticn Not Performed  : 1 True
+      1.2 Static Data Authentication Failed : 0 No  
+      1.3 Chip Data Missing                 : 0 No  
+      1.4 PAN on Terminal Exception File    : 0 No  
+      1.5 DDA failed                        : 0 No  
+      1.6 CDA failed                        : 0 No  
+      --  1.7-1.8 -- future use --          : 00 N/A
+      2.1 Chip and Term App Versions Differ : 1 Yes 
+      2.2 Application Expired               : 0 No  
+      2.3 Application not yet effective     : 0 Is  
+      2.4 Svc Not Allowed for Card Product  : 0 Is  
+      2.5 New Card Product                  : 0 No  
+      --  2.6-2.8 -- future use --          : 000 N/A
+      3.1 Cardholder Verification Failed    : 0 No  
+      3.2 Unrecognised CVM or Other         : 0 Othr
+      3.3 Offline PIN Try Limit Exceeded    : 0 No  
+      3.4 PIN Ent Reqd - no pad or not wkg  : 0 Flse
+      3.5 PIN Ent Reqd - has pad, not entrd : 0 Flse
+      3.6 Online PIN entered                : 1 Yes 
+      --  3.7-3.8 -- future use --          : 00 N/A
+      4.1 Transaction Exceeds Floor Limit   : 1 Yes 
+      4.2 Lower Consec Offl Limit Exceeded  : 1 Yes 
+      4.3 Upper Consec Offl Limit Exceeded  : 0 No  
+      4.4 Tran Selected Randomly for Online : 1 Yes 
+      4.5 Merchant Forced Tran Online       : 0 No  
+      --  4.6-4.8 -- future use --          : 000 N/A
+      5.1 Default TDOL used                 : 0 No  
+      5.2 Issuer Authentication Failed      : 0 No  
+      5.3 Script Proc Failed bfr final genAC: 0 No  
+      5.4 Script Proc Failed aft final genAC: 0 No  
+      --  5.5-5.8 -- future use --          : 0000 N/A
+    4 ARQC               : 85E553F3D41473A5
+    5 Amount, auth       : 000000000000
+    6 Amount, other      : 000000000000
+    7 Appl Ichg Profile  : 3C00
+      --  1.1     -- future use --          : 0 N/A
+      1.2 Static Data Authentication        : 0 Not supported   
+      1.3 Dynamic Data Authentication       : 1 Supported       
+      1.4 Cardholder Verification           : 1 Supported       
+      1.5 Terminal Risk Management          : 1 Performed       
+      1.6 Issuer Authentication             : 1 Supported       
+      --  1.7     -- future use --          : 0 N/A
+      1.8 Combined DDA/Gen AC (CDA)         : 0 Not supported   
+      --  2.1-2.8 -- future use --          : 00000000 N/A
+    8 Appl Tran Ctr      : 01D1
+    9 Term Country Code  : 0356 - India                           
+   10 Tran Currency      : 0356 - Indian rupee            
+   11 Tran date          : 30/01/18
+   12 Tran type          : 00
+   13 Unpred number      : 01DFBD5E
+   16 Issuer Appl Data   : {7} 06010A03A00000
+B3  44 ATM/POS EMV discretionary data
+   Bitmap            : 4B00
+    1 Term Capabilities  : 60402020
+      1.1  Card data manual entry           : 0 Not supported   
+      1.2  Card data from mag stripe        : 1 Supported       
+      1.3  Card data from chip              : 1 Supported       
+      --   1.4-1.8 -- future use --         : 00000 N/A
+      2.1  Offline plaintext PIN            : 0 Not supported   
+      2.2  Online PIN                       : 1 Supported       
+      2.3  Signature                        : 0 Not supported   
+      2.4  Offline enciphered PIN           : 0 Not supported   
+      2.5  No CVN Required                  : 0 Not supported   
+      --   2.6-2.8 -- future use --         : 000 N/A
+      3.1  Static Data Authentication (SDA) : 0 Not supported   
+      3.2  Dynamic Data Authentication (DDA): 0 Not supported   
+      3.3  Card Capture                     : 1 Supported       
+      --   3.4     -- future use --         : 0 N/A
+      3.5  Comb DDA/AC (CDA) generation     : 0 Not supported   
+      --   3.6-3.8 -- future use --         : 000 N/A
+    4 Term Type          : 14
+    6 CVM Results        : 420300
+       1 (bit2) Next CVM if this CVM fails
+      02 (bits 3 to 8) Verify enc PIN online
+      03 Use when: Term supports the CVM
+      00 CVM result unknown
+    7 Appl ID            : A0000000031010
+03   6 ATM Release 5.0
+   Error Flag         : 0 - (No information available)
+   Local PIN Vfy      : 0 - Allowed
+   Card Vfcn          : Y - Done and valid
+   Complete Trks      : 0 - Acq can acquire and send complete trks
+   UAF rec found      : 0 - No, or not UAF auth
+   Rcpt rqstd         : 2 - Rcpt not available, prtr fault
+B7  86 ATM/POS TLF data
+   RBA                  : 64-bit 0 32-bit 0 0
+   (P)TLF Name          :                                    
+   Tkn retrieval option : 1
+   Logical Network      :     
+   FIID                 :     
+   Card number          :                    
+   Member number        :    
+   Logical Network      :     
+   File format          : 1
+   User field 1         :           
+B8  34 ATM/POS Txn profile
+   APCF profile        : ATM             
+   IPCF profile        : ATM             
+   Discard reversal    :  
+   Routed to APCF dest :  
+B9  60 ATM/POS Txn description
+   [ISOCV1100                     ATM CARD VERIFY               ]
+24  10 ATM Flag1
+   Card type          : VD
+   Auth only          : 0
+   Service indicator  : 0
+   Expiry date        : 2205
+   Cash deposit       : 0
+   Card status        : 1
+B5  20 ATM/POS EMV response
+   IAD length         : 10
+   ARPC               : 58FCBFA116487F8E
+   Additional data    : 3030
+   Send script        : N - Don't send card block
+   Gen and send       : N - Don't send card block
+S6  34 Track 2
+   [;4363932101060777=22052260000000? ]
+ 
+(10.9)             --- End of Message ---
+ 
+R  11611 P1A^N502         -> TM000401         Len 588  f--- i 30/01 13:44:15.68
+                                                                         187198
+NDC/DDC message
+  1: Message Class       : 4 - Transaction reply
+  2: Logical Unit Nr     : 000
+  4: Next State          : 119  
+  6: Tran Serial Nr      : 2078
+     Function            : 5 - Set next state and print
+     Transient Screen Nr : 000
+     Screen Updates
+       Screen Nr         : 075
+       Screen Data       : .DAYOUR ACCOUNT NO:100025574189       .EADATE30/01
+                           /18TIME13:44IDTM000401|.FAIBL NCR NEW TEST ATM    
+                            .GATERM OWNER NAME:INDUSIND BANK         .HATERM 
+                           CITY:MUMBAI       .IATERM STATE:MH .JARESPONSE COD
+                           E:001
+  7: Msg Coord 'Number'  : 4
+     Card Action         : 0 - Return card
+     Printer Flag        : 1 - Journal print only
+       [.4         IBL NCR NEW TEST ATM     ...    DATE            TIME       ]
+       [ ATM ID..430/01/18        13:44       TM000401...4CARD NUMBER  436393X]
+       [XXXXX0777..]
+     Printer Flag        : 1 - Journal print only
+       [TXN NO:    2078..A/C:      1000255***89       .    RESPONSE CODE     0]
+       [01...4HELP US SERVE YOU BETTER..4CALL ON 022 4406 6666 OR..21800 22 00]
+       [61 (TOLL FREE MTNL/BSNL)..]
+  8: 5: Smartcard data
+     CAM
+     91   Iss Authent Dat-ARPC : 0A 58FCBFA116487F8E3030
+     8A   Auth Resp Code       : 02 3030
+ 
+(10.9)             --- End of Message ---
+ 
+R  11614 TM000401         -> P1A^N502         Len 64   f--- i 30/01 13:44:17.75
+                                                                         187199
+NDC/DDC message
+Unexpected field 4 length.  Assuming unmacced.
+  1: Message Class       : 2 - Solicited message
+     Message Subclass    : 2 - Status message
+  2: Logical Unit Nr     : 000
+  4: Status Descriptor   : B - Ready - tran reply done
+       CAM ident         : CAM
+       Data Objects      : {50}
+         9F27 Cgram Info Data  CID : 01 40 - TC
+         9F10 Iss App Data     IAD : 07 06010A03600000
+           .1  Derivation key index              : 01
+           .2  Cryptogram Version Number         : 0A
+           .3  Card Verification Results         : 03 (length)
+             1.1+ Second Cryptogram Type           : 01 - TC    
+             1.3+ First Cryptogram Type            : 10 - ARQC  
+             1.5  Issuer Authentication Failed     : 0 - No    
+             1.6  Offline PIN Verification Done    : 0 - No    
+             1.7  Offline PIN Verification Failed  : 0 - No    
+             1.8  Able to Go Online                : 0 - Yes   
+             2.1  Last Online Transaction Complete : 0 - Yes   
+             2.2  PIN Try Limit Exceeded           : 0 - No    
+             2.3  Velocity Checking Ctrs Exceeded  : 0 - No    
+             2.4  New Card                         : 0 - No    
+             2.5  Iss Authentication Faild Last Trn: 0 - No    
+             2.6  Iss Auth Performed on Last Tran  : 0 - Yes   
+             2.7  PIN Try Limit Exceeded - App Blck: 0 - No    
+             2.8  Static Data Auth - Term Go-Online: 0 - Yes   
+             3.1+ Number of Sec Iss Script on Last : 0
+             3.5  Iss Script Proc OK on Last Tran  : 0 - Yes   
+             3.6  DDA Failed Lst Trn & Decl Offline: 0 - No    
+             3.7  DDA Performed                    : 0 - No    
+             3.8  -- reserved future use --        : 
+         95   Term Verif Rslts TVR : 05 808004D000
+           1.1 Offline Authenticn Not Performed  : 1 True
+           1.2 Static Data Authentication Failed : 0 No  
+           1.3 Chip Data Missing                 : 0 No  
+           1.4 PAN on Terminal Exception File    : 0 No  
+           1.5 DDA failed                        : 0 No  
+           1.6 CDA failed                        : 0 No  
+           --  1.7-1.8 -- future use --          : 00 N/A
+           2.1 Chip and Term App Versions Differ : 1 Yes 
+           2.2 Application Expired               : 0 No  
+           2.3 Application not yet effective     : 0 Is  
+           2.4 Svc Not Allowed for Card Product  : 0 Is  
+           2.5 New Card Product                  : 0 No  
+           --  2.6-2.8 -- future use --          : 000 N/A
+           3.1 Cardholder Verification Failed    : 0 No  
+           3.2 Unrecognised CVM or Other         : 0 Othr
+           3.3 Offline PIN Try Limit Exceeded    : 0 No  
+           3.4 PIN Ent Reqd - no pad or not wkg  : 0 Flse
+           3.5 PIN Ent Reqd - has pad, not entrd : 0 Flse
+           3.6 Online PIN entered                : 1 Yes 
+           --  3.7-3.8 -- future use --          : 00 N/A
+           4.1 Transaction Exceeds Floor Limit   : 1 Yes 
+           4.2 Lower Consec Offl Limit Exceeded  : 1 Yes 
+           4.3 Upper Consec Offl Limit Exceeded  : 0 No  
+           4.4 Tran Selected Randomly for Online : 1 Yes 
+           4.5 Merchant Forced Tran Online       : 0 No  
+           --  4.6-4.8 -- future use --          : 000 N/A
+           5.1 Default TDOL used                 : 0 No  
+           5.2 Issuer Authentication Failed      : 0 No  
+           5.3 Script Proc Failed bfr final genAC: 0 No  
+           5.4 Script Proc Failed aft final genAC: 0 No  
+           --  5.5-5.8 -- future use --          : 0000 N/A
+         9B   Tran Status Info     : 02 7800
+           1.1 Offline authentication done       : 0 No  
+           1.2 Cardholder verification done      : 1 Yes 
+           1.3 Card risk management done         : 1 Yes 
+           1.4 Issuer authentication done        : 1 Yes 
+           1.5 Terminal risk management done     : 1 Yes 
+           1.6 Script processing done            : 0 No  
+           --  1.7 -- future use --              : 0 N/A 
+           --  1.8 -- future use --              : 0 N/A 
+           --  2.1 -- future use --              : 0 N/A 
+           --  2.2 -- future use --              : 0 N/A 
+           --  2.3 -- future use --              : 0 N/A 
+           --  2.4 -- future use --              : 0 N/A 
+           --  2.5 -- future use --              : 0 N/A 
+           --  2.6 -- future use --              : 0 N/A 
+           --  2.7 -- future use --              : 0 N/A 
+           --  2.8 -- future use --              : 0 N/A 
+       Script Results    : (none)
+ 
+(10.9)             --- End of Message ---
+ 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+TLF/PTLF:
+=========
+ BASE24-ATM   TRAN LOG LIST            DEV2  IDSB  18/01/30  18:30  02 OF 02
+     CARD:                       FIID:  IDSB              MEMBER NUM:  ***
+ TERMINAL:  TTM000401            LNET:  DEV2            DATE(YYMMDD):  180130
+
+   TRAN CODE: CV1100    MVS CARD VER   DEPOSITORY:
+   TRAN DATE: 30/01                     TRAN TIME: 13:44:07  TIME OFST:     0
+   FROM ACCT: 100025574189               AMOUNT 1:              0.00
+     TO ACCT:                            AMOUNT 2:              0.00 INR
+                                         AMOUNT 3:              0.00
+     SEQ NUM: 2078                     DEP BAL CR:              0.00
+    TERMINAL: TM000401
+         PAN: 4363932101060777          TERM LNET: DEV2
+   RESP CODE: 3001 APPROVED-NO BALANCES    BRANCH: 0002
+AUTH ID RESP: 782651                       REGION: WEST
+ RVSL REASON: 00                         ERR FLAG: 0         OTP FLAG: N
+ RCPT REQUESTED: 2
+ICHG PROC CDE:
+ TXN SUBTYPE:
+
+ NO MORE DETAIL INFORMATION IS AVAILABLE FOR THIS TRANSACTION.
+ *********************************** BASE24 ***********************************
+                   FILE DESTINATION:        NEW LOGICAL NETWORK ID:
+ F5-GOTO SUMMARY  F6-NXT REC  F7-PRV REC  F9-NXT PAGE  F11-PRV PAGE  F12-HELP
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ILF:
+====
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DEBUG:
+======
+
+
+NA
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------

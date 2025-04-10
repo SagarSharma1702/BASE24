@@ -1,0 +1,54 @@
+Requester Debug Steps
+You need to open 3 terminals to debug requester
+1. Term-1(GO-FT Screen)
+2. Term-2(inspect screen)
+3. Term-3(pause screen)
+
+Step 1-
+On second terminal enter > PATHCOM $(DEPENDING ON THE LOGIN) 
+Open go-ft screen on term-1
+Enter >status term *
+alter inspect (set it to ON
+and get the term name/id
+
+Step 2-
+Get the file name by 
+#in 
+#in expanded to:
+
+$ZN02B.#PT0G2X4(file name)
+
+Step 3-
+Then on inspect term type
+
+>inspect term ________________(term id ), file _______________(file name) then enter
+
+Step 4- 
+Put pause on screen 3 then give any command from GO-FT Screen and then check PAUSE Screen.
+
+
+
+Server Debug Steps
+
+STEPS FOR SERVER DEBUG:
+Go to PATHCOM
+INFO SERVER NAME
+FREEZE “SERVER NAME”
+STOP “SERVER NAME”
+ALTER SERVER “SERVER NAME” ,DEBUG ON
+	$AUDIT CUPS2 29> WHO
+	Home terminal: $ZN01B.#PTE8AC2
+	TACL process: \OCCL.$Z0XM
+	Primary CPU: 1 (NSR-E)
+	Default Segment File: $AUDIT.#0001131
+	Pages allocated: 16  Pages Maximum: 1024
+	Bytes Used: 14516 (0%)  Bytes Maximum: 2097152
+	Current volume: $AUDIT.CUPS2
+	Saved volume:   $AUDIT.CUPS2
+	Userid: 10,12  Username: DEVP.CUPS2  Security: "GOGO"
+	Logon name: DEVP.CUPS2
+
+ALTER SERVER “SERVER NAME”,HOMETERM “$ZN01B.#PTE8AC2”
+THAW “SERVER NAME”
+NOW PAUSE AT THE TERMINAL 
+SEND THE REQUEST FROM THE REQUESTER ,check the terminal which was pause.

@@ -1,0 +1,920 @@
+ R1229543 S1ARUPNFS1       -> P1A^RUPNFS1      Len 314  f--- i 14/03 11:53:30.29
+                                                                         272574
+ISO8583 message
+    Message Type            : 0100 - Authorisation request
+    Primary Bit Map         : 7638 6481 29E1 B008
+  2 PAN                     : 6521620200002162
+  3 Processing Code         : 00 00 00 - Purchase - goods and services
+  4 Tran Amount             : 600.00
+  6 Billing Amount          : 600.00
+  7 Transmit Date and Time  : 14/03/yy 06:23:30
+ 11 Trace Number            : 000035
+ 12 Local Time              : 11:53:30
+ 13 Local Date              : 14/03/yy
+ 18 Merchant Type           : 5999 - Tombstones, Fwks, Retail (other)
+ 19 Acq Inst Country Code   : 064 - Bhutan                          
+ 22 POS Entry Mode          : 901 - Full mag stripe from card, PIN entry cap
+ 25 POS Condition Code      : 00
+ 32 Acquiring Inst ID       : 720001
+ 35 Track 2                 : 6521620200002162=23122268710000000000
+ 37 RRN                     : 007411000035
+ 40 Service Restriction Code: 226
+ 41 Card Accptr Term ID     : TEST1234
+ 42 Card Accptr ID          : TEST12345678901
+ 43 Card Accptr Name/Locn   : NPCIBANK                CHENNAI     TNIN
+ 48 Add'l Data - Private    : {022}
+***Warning*** TLV data does not finish at end of field
+    [051005POS0105800500030]
+ 49 Tran Currency Code      : 064 - (not recognised)
+ 51 Billing Currency Code   : 356 - Indian rupee            
+ 52 PIN Data                : 3230394643393245
+ 61 POS Data                : (invalid length 91D)
+***Warning*** Have not used all the data in the record.
+Remainder: [8C46E041321012220001000600006AddressAddressAddres]
+ 
+(10.9)             --- End of Message ---
+ 
+R1229544 P1A^RUPNFS1      -> P1A^RTAU1        Len 1132 f--- i 14/03 11:53:30.29
+                                                                         272575
+PSTM message
+Type: 0200 PC: 10 0 00 0 RC: 000 Seq: 007411000035 Card: 6521620200002162
+Message type         [0200]
+Product              [02] POS
+DPC number           [ 0000
+Routing status       [00] No error
+Originating process  [P1A^RUPNFS1     ]
+AST Routing process  [0000000000000000]
+Routing process 1    [0000000000000000]
+Routing process 2    [0000000000000000]
+Msg Orig Ind (obs)   [0]
+Originator           [7] Interchange
+Responder            [0] Default (resp not gen yet)
+Posting date         [200314]
+Terminal LN          [RUPE]
+         FIID        [RUPE]
+         ID          [TEST1234        ]
+         Location    [0000000000000000000000000]
+         Owner       [NPCIBANK              ]
+         City        [ CHENNAI     ]
+         State       [000]
+         Country     [IN]
+         Type        [00]
+Branch ID            [0000]
+Original Currency    [356] Indian rupee            
+Auth Indicator 2     [0] None
+Time Offset          [ 0
+Clerk ID             [000000]
+CRT Auth Group       [0000]
+CRT Auth user ID     [00000000]
+Sequence number      [007411000035]
+Preauth seq number   [000000000000]
+Invoice number       [0000000000]
+Original inv number  [0000000000]
+Batch seq number     [000]
+Batch number         [000]
+Shift number         [000]
+Acq inst ID          [00000720001]
+Rcv inst ID          [00000000000]
+Retailer ID          [TEST123456789010000]
+         region      [0000]
+         group       [0000]
+         SIC         [5999]
+Tran code            [10 0 00 0] Purchase
+Origin               [BICI]
+Destination          [B24 ]
+Card LN              [0000]
+Card FIID            [0000]
+Account              [0000000000000000000]
+Response             [000] App'd with balances
+Rsn code frm CAF|NEG [00]
+Track 2              [;6521620200002162=23122268710000000000? ]
+Member number        [   ]
+Expiry date          [    ]
+User field 2         [0]
+Amount 1             [ 600.00 
+Amount 2             [ 0.00 
+Multi currency       [
+   Auth currency     [356] Indian rupee            
+   Settle currency   [064] (not recognised)
+   Auth conv rate    [00000001]
+   Settle conv rate  [61000000]
+   Conv date time    [ 14/03/20 06:23
+Preauth hold         [ 0.00 
+Approval code length [6]
+Approval code        [        ]
+Interchange response [        ]
+Pseudo term ID       [0000]
+Draft capture        [0] Auth only, paper settle later
+Settlement flag      [0]
+Referral phone       [00000000000000000000]
+Save acct type       [00]
+Override (CRT)       [0] Normal tran, no CRT Auth
+Rte Service          [00]
+    Retailer program [0]
+    Issuer           [00]
+    Over limit       [0]
+    Online limit     [ 0
+    Offline limit    [ 0
+    Primary          [0000000000000000]
+    Alternate 1      [0000000000000000]
+    Alternate 2      [0000000000000000]
+    Auth indicator   [0]
+    Default          [0]
+    Hit nneg         [0]
+    AST found        [0]
+Completion req'd     [0]
+Adjustment           [0]
+Admin sec ind        [ 12336 
+Tran date            [200314]
+Tran time            [11533000]
+Acq inst settle date [200314]
+Iss inst settle date [000000]
+Reversal code        [00] 
+P.O.S. cond code     [00]
+P.O.S. entry mode    [021]
+PIN                  [209FC92E91D8C46E]
+PIN size             [16]
+PIN tries            [0]
+PIN key              [0000000000000013]
+User key             [0000000000000013]
+PIN format           [1]
+PIN pad character    [F]
+ANSI offset          [ 3
+Host trace number    [000152]
+Entry time           [ 14/03/20 06:23:30.292
+Exit time            [ (zero)
+Reentry time         [ (zero)
+Fwd inst ID          [00000000000]
+Card acceptor ID     [TEST1234567]
+Card issuer ID       [00000000000]
+Original msg type    [0100]
+         tran time   [11533000]
+         tran date   [0314]
+         seq nr      [007411000035]
+         B24 post    [0314]
+Reason for chgback   [00]
+Number of chgback    [0]
+Cheque ID type       [00]
+Cheque ID / Address  [000000000000000000000000]
+State                [00]
+Date of birth        [000000]
+Zip code             [000000000]
+Postcode             [600006Addr]
+Data flag            [0]
+Number of services   [ 4
+Services
+Tp P F FloorLimit  TranLimit
+V  0 0          0          0
+P  0 0          0          0
+VD 0 0          0          0
+RD 0 0          0          0
+Number of tokens: 7  Total Lgth: 274
+ID Len Desc
+-- --- ----------------------------------------------------------------------
+FR   6 (unrecognised token ID)
+   [000300]
+B8  34 ATM/POS Txn profile
+   APCF profile        : POSRUP          
+   IPCF profile        :                 
+   Discard reversal    :  
+   Routed to APCF dest : N
+B9  60 ATM/POS Txn description
+   [ISO000000                                                   ]
+BE  40 ATM/POS Original currency 6.0
+   Amount 1           : 600.00
+   Amount 2           : 0.00
+   Currency           : 064 - (not recognised)
+   Conv Rate          :          ?
+   Conv Date          :   /  /yy
+   User field         :          
+B0  38 ATM/POS Acquirer switch
+   Length             : 36
+   FIID               : BICI
+   Version            : 01
+   Tran date and time : 14/03/yy 06:23:30
+   Trace number       : 000035
+   Response code      :   
+BY  54 Switch common data
+   STAN               : 000035
+   RRN                : 007411000035
+   Network ID         :     
+   Response code      :    
+   ISA indicator      :   - Not ISA fee eligible
+   ISA Amount         :          -  ((invalid)         )
+   Fee program ind    :    
+   On/Off premises    :   - (not recognised)
+   Cross border tran  :  
+   Cross border crncy :   - (not recognised)
+   Currency conv amt  :             
+   Card lvl prod ID   :    - (not recognised)
+   User Fld ACI       :  C0
+ 
+(10.9)             --- End of Message ---
+ 
+R1229546 P1A^RAM          -> S1ARAM1          Len 65   f--- i 14/03 11:53:30.29
+                                                                         272576
+Message type not identified
+Possibly an HSM message (RSM5 CY 38):
+   0: RSM5CY381F8475BA93A021369700763C1E34DF8716521620200002162;2312226
+ 
+(10.9)             --- End of Message ---
+ 
+R1229548 S1ARAM1          -> P1A^RAM          Len 8    f--- i 14/03 11:53:30.30
+                                                                         272577
+Message type not identified
+Possibly an HSM message (RSM5 CZ 00):
+Msg Header      : RSM5
+Response Code   : CZ - Verify a VISA CVV or MasterCard CVC, response
+Error Code      : 00 - OK
+ 
+(10.9)             --- End of Message ---
+ 
+R1229550 P1A^RAM          -> S1ARAM2          Len 129  f--- i 14/03 11:53:30.30
+                                                                         272578
+Message type not identified
+Possibly an HSM message (RSM5 EA UF):
+   0: RSM5EAUF0F6A38EFD4555E77443635A303D456E5C2EB753475033F312209FC92E91D8C
+  70: 46E01041620200002160123456789012345620200N2FFFF1562FFFFFFFF
+ 
+(10.9)             --- End of Message ---
+ 
+R1229552 S1ARAM2          -> P1A^RAM          Len 8    f--- i 14/03 11:53:30.30
+                                                                         272579
+Message type not identified
+Possibly an HSM message (RSM5 EB 00):
+   0: RSM5EB00
+ 
+(10.9)             --- End of Message ---
+ 
+R1229554 P1A^RTAU1        -> P1A^POSHISOFIN   Len 1190 f--- i 14/03 11:53:30.31
+                                                                         272580
+PSTM message
+Type: 0200 PC: 10 2 11 0 RC: 000 Seq: 007411000035 Card: 6521620200002162
+Message type         [0200]
+Product              [02] POS
+DPC number           [ 0008
+Routing status       [00] No error
+Originating process  [P1A^RUPNFS1     ]
+AST Routing process  [P1A^RTAU1       ]
+Routing process 1    [P1A^RTAU1       ]
+Routing process 2    [0000000000000000]
+Msg Orig Ind (obs)   [0]
+Originator           [7] Interchange
+Responder            [0] Default (resp not gen yet)
+Posting date         [200314]
+Terminal LN          [RUPE]
+         FIID        [RUPE]
+         ID          [TEST1234        ]
+         Location    [0000000000000000000000000]
+         Owner       [NPCIBANK              ]
+         City        [ CHENNAI     ]
+         State       [000]
+         Country     [IN]
+         Type        [00]
+Branch ID            [0000]
+Original Currency    [356] Indian rupee            
+Auth Indicator 2     [0] None
+Time Offset          [ 0
+Clerk ID             [000000]
+CRT Auth Group       [0000]
+CRT Auth user ID     [00000000]
+Sequence number      [007411000035]
+Preauth seq number   [000000000000]
+Invoice number       [0000000000]
+Original inv number  [0000000000]
+Batch seq number     [000]
+Batch number         [000]
+Shift number         [000]
+Acq inst ID          [00000720001]
+Rcv inst ID          [00000504594]
+Retailer ID          [TEST123456789010000]
+         region      [0000]
+         group       [0000]
+         SIC         [5999]
+Tran code            [10 2 11 0] Purchase
+Origin               [BICI]
+Destination          [B24 ]
+Card LN              [TES1]
+Card FIID            [IDSB]
+Account              [100092332479       ]
+Response             [000] App'd with balances
+Rsn code frm CAF|NEG [00]
+Track 2              [;6521620200002162=23122268710000000000? ]
+Member number        [000]
+Expiry date          [2312]
+User field 2         [0]
+Amount 1             [ 600.00 
+Amount 2             [ 0.00 
+Multi currency       [
+   Auth currency     [356] Indian rupee            
+   Settle currency   [064] (not recognised)
+   Auth conv rate    [00000001]
+   Settle conv rate  [61000000]
+   Conv date time    [ 14/03/20 06:23
+Preauth hold         [ 0.00 
+Approval code length [6]
+Approval code        [        ]
+Interchange response [        ]
+Pseudo term ID       [0000]
+Draft capture        [0] Auth only, paper settle later
+Settlement flag      [0]
+Referral phone       [00000000000000000000]
+Save acct type       [11]
+Override (CRT)       [0] Normal tran, no CRT Auth
+Rte Service          [RD]
+    Retailer program [0]
+    Issuer           [00]
+    Over limit       [0]
+    Online limit     [ 0
+    Offline limit    [ 0
+    Primary          [AUTHH           ]
+    Alternate 1      [                ]
+    Alternate 2      [                ]
+    Auth indicator   [P]
+    Default          [0]
+    Hit nneg         [0]
+    AST found        [2]
+Completion req'd     [0]
+Adjustment           [0]
+Admin sec ind        [ 12336 
+Tran date            [200314]
+Tran time            [11533000]
+Acq inst settle date [200314]
+Iss inst settle date [000000]
+Reversal code        [00] 
+P.O.S. cond code     [00]
+P.O.S. entry mode    [021]
+PIN                  [0000000000000000]
+PIN size             [16]
+PIN tries            [Z]
+PIN key              [0000000000000013]
+User key             [0000000000000013]
+PIN format           [1]
+PIN pad character    [F]
+ANSI offset          [ 0
+Host trace number    [000152]
+Entry time           [ 14/03/20 06:23:30.292
+Exit time            [ (zero)
+Reentry time         [ (zero)
+Fwd inst ID          [00000000000]
+Card acceptor ID     [TEST1234567]
+Card issuer ID       [00000000000]
+Original msg type    [0100]
+         tran time   [11533000]
+         tran date   [0314]
+         seq nr      [007411000035]
+         B24 post    [0314]
+Reason for chgback   [00]
+Number of chgback    [0]
+Cheque ID type       [00]
+Cheque ID / Address  [000000000000000000000000]
+State                [00]
+Date of birth        [000000]
+Zip code             [000000000]
+Postcode             [600006Addr]
+Data flag            [0]
+Number of services   [ 4
+Services
+Tp P F FloorLimit  TranLimit
+V  0 0          0          0
+P  0 0          0          0
+VD 0 0          0          0
+RD 0 0          0          0
+Number of tokens: 9  Total Lgth: 332
+ID Len Desc
+-- --- ----------------------------------------------------------------------
+FR   6 (unrecognised token ID)
+   [000300]
+B8  34 ATM/POS Txn profile
+   APCF profile        : POSRUP          
+   IPCF profile        : POS             
+   Discard reversal    :  
+   Routed to APCF dest : N
+B9  60 ATM/POS Txn description
+   [ISO000000                     ISO001000                     ]
+BE  40 ATM/POS Original currency 6.0
+   Amount 1           : 600.00
+   Amount 2           : 0.00
+   Currency           : 064 - (not recognised)
+   Conv Rate          :          ?
+   Conv Date          :   /  /yy
+   User field         :          
+B0  38 ATM/POS Acquirer switch
+   Length             : 36
+   FIID               : BICI
+   Version            : 01
+   Tran date and time : 14/03/yy 06:23:30
+   Trace number       : 000035
+   Response code      :   
+BY  54 Switch common data
+   STAN               : 000035
+   RRN                : 007411000035
+   Network ID         :     
+   Response code      :    
+   ISA indicator      :   - Not ISA fee eligible
+   ISA Amount         :          -  ((invalid)         )
+   Fee program ind    :    
+   On/Off premises    :   - (not recognised)
+   Cross border tran  :  
+   Cross border crncy :   - (not recognised)
+   Currency conv amt  :             
+   Card lvl prod ID   :    - (not recognised)
+   User Fld ACI       : ! C0
+C0  26 POS Release 5.1
+   [        600006Addr        ]
+04  20 POS Release 5.0
+   Error flag            :   - (no info)
+   Routing group         :            
+   Card verification     : Y - CVV valid
+   City name extension   :      
+   Complete track-2 data :   - Yes
+   UAF record found      :   - No
+ 
+(10.9)             --- End of Message ---
+ 
+R1229556 P1A^POSHISOFIN   -> S1AHOSTCLI05     Len 347  f--- i 14/03 11:53:30.31
+                                                                         272581
+ISO8583 message
+    BASE24 ISO Header
+    Start of Message        : ISO
+    Product Indicator       : 02 - POS
+    Release Number          : 60
+    Msg Status|Fld in Error : 000
+    Originator              : 7 - Switch|VRU
+    Responder               : 0 - (not set)
+    ------------------------
+    Message Type            : 0200 - Financial tran request
+    Primary Bit Map         : F23E E401 88E0 8018
+  1 Secondary Bit Map       : 0000 0000 1400 000C
+  2 PAN                     : 6521620200002162
+  3 Processing Code         : 00 10 00 - Purchase - goods and services
+  4 Tran Amount             : 600.00
+  7 Transmit Date and Time  : 14/03/yy 06:23:30
+ 11 Trace Number            : 021832
+ 12 Local Time              : 11:53:30
+ 13 Local Date              : 14/03/yy
+ 14 Expiry Date             : dd/12/23
+ 15 Settlement Date         : 14/03/yy
+ 17 Capture Date            : 14/03/yy
+ 18 Merchant Type           : 5999 - Tombstones, Fwks, Retail (other)
+ 19 Acq Inst Country Code   :     - (not recognised, poss obsolete) 
+ 22 POS Entry Mode          : 021 - Partial mag stripe, PIN entry cap
+ 32 Acquiring Inst ID       : 720001
+ 33 Forwarding Inst ID      : {0}
+ 37 RRN                     : 007411000035
+ 41 Card Accptr Term ID     : TEST1234        
+ 42 Card Accptr ID          : TEST1234567    
+ 43 Card Accptr Name/Locn   : NPCIBANK               CHENNAI     000IN
+ 49 Tran Currency Code      : 356 - Indian rupee            
+ 60 Advice Reason Code      : RUPERUPE+0000000
+ 61 POS Data                : IDSBTES1011        
+100 Rcv Inst ID             : 504594
+102 Account ID 1            : 100092332479
+125 Reserved - Private      : RDBICIB24 00
+126 Reserved - Private      : 00000000000000000000000000000000000000
+ 
+(10.9)             --- End of Message ---
+ 
+R1229561 S1AHOSTCLI05     -> P1A^POSHISOFIN   Len 353  f--- i 14/03 11:53:30.92
+                                                                         272583
+ISO8583 message
+    BASE24 ISO Header
+    Start of Message        : ISO
+    Product Indicator       : 02 - POS
+    Release Number          : 60
+    Msg Status|Fld in Error : 000
+    Originator              : 7 - Switch|VRU
+    Responder               : 5 - Host
+    ------------------------
+    Message Type            : 0210 - Financial tran response
+    Primary Bit Map         : F23E E401 0EE0 8018
+  1 Secondary Bit Map       : 0000 0000 1400 000C
+  2 PAN                     : 6521620200002162
+  3 Processing Code         : 00 10 00 - Purchase - goods and services
+  4 Tran Amount             : 600.00
+  7 Transmit Date and Time  : 14/03/yy 06:23:30
+ 11 Trace Number            : 021832
+ 12 Local Time              : 14:11:53
+ 13 Local Date              : 14/03/yy
+ 14 Expiry Date             : dd/12/23
+ 15 Settlement Date         : 03/20/yy
+ 17 Capture Date            : 14/03/yy
+ 18 Merchant Type           : 5999 - Tombstones, Fwks, Retail (other)
+ 19 Acq Inst Country Code   :     - (not recognised, poss obsolete) 
+ 22 POS Entry Mode          : 021 - Partial mag stripe, PIN entry cap
+ 32 Acquiring Inst ID       : 720001
+ 37 RRN                     : 007411000035
+ 38 Auth ID Resp            : 580903
+ 39 Response Code           : 00 - Approved
+ 41 Card Accptr Term ID     : TEST1234        
+ 42 Card Accptr ID          : TEST1234567    
+ 43 Card Accptr Name/Locn   : NPCIBANK               CHENNAI     000IN
+ 49 Tran Currency Code      : 356 - Indian rupee            
+ 60 Advice Reason Code      : RUPERUPE+0000000
+ 61 POS Data                : IDSBTES1011        
+100 Rcv Inst ID             : 504594
+102 Account ID 1            : 100092332479
+125 Reserved - Private      : RDBICIB24 00
+126 Reserved - Private      : 00000000000000000000000000000000000000
+ 
+(10.9)             --- End of Message ---
+ 
+R1229562 P1A^POSHISOFIN   -> P1A^RTAU1        Len 1190 f--- i 14/03 11:53:30.92
+                                                                         272584
+PSTM message
+Type: 0210 PC: 10 2 11 0 RC: 001 Seq: 007411000035 Card: 6521620200002162
+Message type         [0210]
+Product              [02] POS
+DPC number           [ 0008
+Routing status       [00] No error
+Originating process  [P1A^RUPNFS1     ]
+AST Routing process  [P1A^RTAU1       ]
+Routing process 1    [P1A^RTAU1       ]
+Routing process 2    [0000000000000000]
+Msg Orig Ind (obs)   [0]
+Originator           [7] Interchange
+Responder            [5] Host
+Posting date         [200314]
+Terminal LN          [RUPE]
+         FIID        [RUPE]
+         ID          [TEST1234        ]
+         Location    [0000000000000000000000000]
+         Owner       [NPCIBANK              ]
+         City        [ CHENNAI     ]
+         State       [000]
+         Country     [IN]
+         Type        [00]
+Branch ID            [0000]
+Original Currency    [356] Indian rupee            
+Auth Indicator 2     [0] None
+Time Offset          [ 0
+Clerk ID             [000000]
+CRT Auth Group       [0000]
+CRT Auth user ID     [00000000]
+Sequence number      [007411000035]
+Preauth seq number   [000000000000]
+Invoice number       [0000000000]
+Original inv number  [0000000000]
+Batch seq number     [000]
+Batch number         [000]
+Shift number         [000]
+Acq inst ID          [00000720001]
+Rcv inst ID          [00000504594]
+Retailer ID          [TEST123456789010000]
+         region      [0000]
+         group       [0000]
+         SIC         [5999]
+Tran code            [10 2 11 0] Purchase
+Origin               [BICI]
+Destination          [B24 ]
+Card LN              [TES1]
+Card FIID            [IDSB]
+Account              [100092332479       ]
+Response             [001] App'd without balances
+Rsn code frm CAF|NEG [00]
+Track 2              [;6521620200002162=23122268710000000000? ]
+Member number        [000]
+Expiry date          [2312]
+User field 2         [0]
+Amount 1             [ 600.00 
+Amount 2             [ 0.00 
+Multi currency       [
+   Auth currency     [356] Indian rupee            
+   Settle currency   [064] (not recognised)
+   Auth conv rate    [00000001]
+   Settle conv rate  [61000000]
+   Conv date time    [ 14/03/20 06:23
+Preauth hold         [ 0.00 
+Approval code length [6]
+Approval code        [580903  ]
+Interchange response [        ]
+Pseudo term ID       [0000]
+Draft capture        [0] Auth only, paper settle later
+Settlement flag      [0]
+Referral phone       [00000000000000000000]
+Save acct type       [11]
+Override (CRT)       [0] Normal tran, no CRT Auth
+Rte Service          [RD]
+    Retailer program [0]
+    Issuer           [00]
+    Over limit       [0]
+    Online limit     [ 0
+    Offline limit    [ 0
+    Primary          [AUTHH           ]
+    Alternate 1      [                ]
+    Alternate 2      [                ]
+    Auth indicator   [P]
+    Default          [0]
+    Hit nneg         [0]
+    AST found        [2]
+Completion req'd     [0]
+Adjustment           [0]
+Admin sec ind        [ 12336 
+Tran date            [200314]
+Tran time            [11533000]
+Acq inst settle date [200314]
+Iss inst settle date [000000]
+Reversal code        [00] 
+P.O.S. cond code     [00]
+P.O.S. entry mode    [021]
+PIN                  [0000000000000000]
+PIN size             [16]
+PIN tries            [Z]
+PIN key              [0000000000000013]
+User key             [0000000000000013]
+PIN format           [1]
+PIN pad character    [F]
+ANSI offset          [ 0
+Host trace number    [000152]
+Entry time           [ 14/03/20 06:23:30.292
+Exit time            [ 14/03/20 06:23:30.314
+Reentry time         [ 14/03/20 06:23:30.925
+Fwd inst ID          [00000000000]
+Card acceptor ID     [TEST1234567]
+Card issuer ID       [00000000000]
+Original msg type    [0100]
+         tran time   [11533000]
+         tran date   [0314]
+         seq nr      [007411000035]
+         B24 post    [0314]
+Reason for chgback   [00]
+Number of chgback    [0]
+Cheque ID type       [00]
+Cheque ID / Address  [000000000000000000000000]
+State                [00]
+Date of birth        [000000]
+Zip code             [000000000]
+Postcode             [600006Addr]
+Data flag            [0]
+Number of services   [ 4
+Services
+Tp P F FloorLimit  TranLimit
+V  0 0          0          0
+P  0 0          0          0
+VD 0 0          0          0
+RD 0 0          0          0
+Number of tokens: 9  Total Lgth: 332
+ID Len Desc
+-- --- ----------------------------------------------------------------------
+FR   6 (unrecognised token ID)
+   [000300]
+B8  34 ATM/POS Txn profile
+   APCF profile        : POSRUP          
+   IPCF profile        : POS             
+   Discard reversal    :  
+   Routed to APCF dest : N
+B9  60 ATM/POS Txn description
+   [ISO000000                     ISO001000                     ]
+BE  40 ATM/POS Original currency 6.0
+   Amount 1           : 600.00
+   Amount 2           : 0.00
+   Currency           : 064 - (not recognised)
+   Conv Rate          :          ?
+   Conv Date          :   /  /yy
+   User field         :          
+B0  38 ATM/POS Acquirer switch
+   Length             : 36
+   FIID               : BICI
+   Version            : 01
+   Tran date and time : 14/03/yy 06:23:30
+   Trace number       : 000035
+   Response code      :   
+BY  54 Switch common data
+   STAN               : 000035
+   RRN                : 007411000035
+   Network ID         :     
+   Response code      :    
+   ISA indicator      :   - Not ISA fee eligible
+   ISA Amount         :          -  ((invalid)         )
+   Fee program ind    :    
+   On/Off premises    :   - (not recognised)
+   Cross border tran  :  
+   Cross border crncy :   - (not recognised)
+   Currency conv amt  :             
+   Card lvl prod ID   :    - (not recognised)
+   User Fld ACI       : ! C0
+C0  26 POS Release 5.1
+   [        600006Addr        ]
+04  20 POS Release 5.0
+   Error flag            :   - (no info)
+   Routing group         :            
+   Card verification     : Y - CVV valid
+   City name extension   :      
+   Complete track-2 data :   - Yes
+   UAF record found      :   - No
+ 
+(10.9)             --- End of Message ---
+ 
+R1229564 P1A^RTAU1        -> P1A^RUPNFS1      Len 1190 f--- i 14/03 11:53:30.92
+                                                                         272585
+PSTM message
+Type: 0210 PC: 10 2 11 0 RC: 001 Seq: 007411000035 Card: 6521620200002162
+Message type         [0210]
+Product              [02] POS
+DPC number           [ 0008
+Routing status       [00] No error
+Originating process  [P1A^RUPNFS1     ]
+AST Routing process  [P1A^RTAU1       ]
+Routing process 1    [P1A^RTAU1       ]
+Routing process 2    [0000000000000000]
+Msg Orig Ind (obs)   [0]
+Originator           [7] Interchange
+Responder            [5] Host
+Posting date         [200314]
+Terminal LN          [RUPE]
+         FIID        [RUPE]
+         ID          [TEST1234        ]
+         Location    [0000000000000000000000000]
+         Owner       [NPCIBANK              ]
+         City        [ CHENNAI     ]
+         State       [000]
+         Country     [IN]
+         Type        [00]
+Branch ID            [0000]
+Original Currency    [356] Indian rupee            
+Auth Indicator 2     [0] None
+Time Offset          [ 0
+Clerk ID             [000000]
+CRT Auth Group       [0000]
+CRT Auth user ID     [00000000]
+Sequence number      [007411000035]
+Preauth seq number   [000000000000]
+Invoice number       [0000000000]
+Original inv number  [0000000000]
+Batch seq number     [000]
+Batch number         [000]
+Shift number         [000]
+Acq inst ID          [00000720001]
+Rcv inst ID          [00000504594]
+Retailer ID          [TEST123456789010000]
+         region      [0000]
+         group       [0000]
+         SIC         [5999]
+Tran code            [10 2 11 0] Purchase
+Origin               [BICI]
+Destination          [B24 ]
+Card LN              [TES1]
+Card FIID            [IDSB]
+Account              [100092332479       ]
+Response             [001] App'd without balances
+Rsn code frm CAF|NEG [00]
+Track 2              [;6521620200002162=23122260000000000000? ]
+Member number        [000]
+Expiry date          [2312]
+User field 2         [0]
+Amount 1             [ 600.00 
+Amount 2             [ 0.00 
+Multi currency       [
+   Auth currency     [356] Indian rupee            
+   Settle currency   [064] (not recognised)
+   Auth conv rate    [00000001]
+   Settle conv rate  [61000000]
+   Conv date time    [ 14/03/20 06:23
+Preauth hold         [ 0.00 
+Approval code length [6]
+Approval code        [580903  ]
+Interchange response [        ]
+Pseudo term ID       [0000]
+Draft capture        [0] Auth only, paper settle later
+Settlement flag      [0]
+Referral phone       [00000000000000000000]
+Save acct type       [11]
+Override (CRT)       [0] Normal tran, no CRT Auth
+Rte Service          [RD]
+    Retailer program [0]
+    Issuer           [00]
+    Over limit       [0]
+    Online limit     [ 0
+    Offline limit    [ 0
+    Primary          [AUTHH           ]
+    Alternate 1      [                ]
+    Alternate 2      [                ]
+    Auth indicator   [P]
+    Default          [0]
+    Hit nneg         [0]
+    AST found        [2]
+Completion req'd     [0]
+Adjustment           [0]
+Admin sec ind        [ 12336 
+Tran date            [200314]
+Tran time            [11533000]
+Acq inst settle date [200314]
+Iss inst settle date [000000]
+Reversal code        [00] 
+P.O.S. cond code     [00]
+P.O.S. entry mode    [021]
+PIN                  [0000000000000000]
+PIN size             [16]
+PIN tries            [Z]
+PIN key              [0000000000000013]
+User key             [0000000000000013]
+PIN format           [1]
+PIN pad character    [F]
+ANSI offset          [ 0
+Host trace number    [000152]
+Entry time           [ 14/03/20 06:23:30.292
+Exit time            [ 14/03/20 06:23:30.314
+Reentry time         [ 14/03/20 06:23:30.925
+Fwd inst ID          [00000000000]
+Card acceptor ID     [TEST1234567]
+Card issuer ID       [00000000000]
+Original msg type    [0100]
+         tran time   [11533000]
+         tran date   [0314]
+         seq nr      [007411000035]
+         B24 post    [0314]
+Reason for chgback   [00]
+Number of chgback    [0]
+Cheque ID type       [00]
+Cheque ID / Address  [000000000000000000000000]
+State                [00]
+Date of birth        [000000]
+Zip code             [000000000]
+Postcode             [600006Addr]
+Data flag            [0]
+Number of services   [ 4
+Services
+Tp P F FloorLimit  TranLimit
+V  0 0          0          0
+P  0 0          0          0
+VD 0 0          0          0
+RD 0 0          0          0
+Number of tokens: 9  Total Lgth: 332
+ID Len Desc
+-- --- ----------------------------------------------------------------------
+FR   6 (unrecognised token ID)
+   [000300]
+B8  34 ATM/POS Txn profile
+   APCF profile        : POSRUP          
+   IPCF profile        : POS             
+   Discard reversal    :  
+   Routed to APCF dest : N
+B9  60 ATM/POS Txn description
+   [ISO000000                     ISO001000                     ]
+BE  40 ATM/POS Original currency 6.0
+   Amount 1           : 600.00
+   Amount 2           : 0.00
+   Currency           : 064 - (not recognised)
+   Conv Rate          :          ?
+   Conv Date          :   /  /yy
+   User field         :          
+B0  38 ATM/POS Acquirer switch
+   Length             : 36
+   FIID               : BICI
+   Version            : 01
+   Tran date and time : 14/03/yy 06:23:30
+   Trace number       : 000035
+   Response code      :   
+BY  54 Switch common data
+   STAN               : 000035
+   RRN                : 007411000035
+   Network ID         :     
+   Response code      :    
+   ISA indicator      :   - Not ISA fee eligible
+   ISA Amount         :          -  ((invalid)         )
+   Fee program ind    :    
+   On/Off premises    :   - (not recognised)
+   Cross border tran  :  
+   Cross border crncy :   - (not recognised)
+   Currency conv amt  :             
+   Card lvl prod ID   :    - (not recognised)
+   User Fld ACI       : ! C0
+C0  26 POS Release 5.1
+   [        600006Addr        ]
+04  20 POS Release 5.0
+   Error flag            :   - (no info)
+   Routing group         :            
+   Card verification     : Y - CVV valid
+   City name extension   :      
+   Complete track-2 data :   - Yes
+   UAF record found      :   - No
+ 
+(10.9)             --- End of Message ---
+ 
+R1229566 P1A^RUPNFS1      -> S1ARUPNFS1       Len 152  f--- i 14/03 11:53:30.93
+                                                                         272586
+ISO8583 message
+    Message Type            : 0110 - Authorisation response
+    Primary Bit Map         : 7638 2001 0E81 A000
+  2 PAN                     : 6521620200002162
+  3 Processing Code         : 00 00 00 - Purchase - goods and services
+  4 Tran Amount             : 600.00
+  6 Billing Amount          : 600.00
+  7 Transmit Date and Time  : 14/03/yy 06:23:30
+ 11 Trace Number            : 000035
+ 12 Local Time              : 11:53:30
+ 13 Local Date              : 14/03/yy
+ 19 Acq Inst Country Code   : 064 - Bhutan                          
+ 32 Acquiring Inst ID       : 720001
+ 37 RRN                     : 007411000035
+ 38 Auth ID Resp            : 580903
+ 39 Response Code           : 00 - Approved
+ 41 Card Accptr Term ID     : TEST1234
+ 48 Add'l Data - Private    : {018}
+    [0510] (leading 4 chars)
+    05 PO (not recognised)        : S01
+    05 40 Certificate             : 01M
+ 49 Tran Currency Code      : 064 - (not recognised)
+ 51 Billing Currency Code   : 356 - Indian rupee            
+ 
+(10.9)             --- End of Message ---
